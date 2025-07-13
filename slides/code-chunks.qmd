@@ -1,0 +1,32 @@
+# Analysis {.unnumbered}
+
+{{< revealjs file="/slides/analysis._slides.html"width = "800px" height="500px">}}
+
+## Exercise - Code chunks
+
+Open the `dummy.R` (if you're using R) or `dummy.py` (if you're using Python) script from the `scripts` folder.
+
+1.  Insert a code chunk at the beginning of your document (i.e. below the YAML header) and insert the relevant code from the script to load the necessary packages.
+2.  Insert a code chunk in the `Results` section of your document and copy a piece/section of the dummy script into it.
+3.  Run the code chunk and see if it works alright.
+4.  Repeat the previous three steps until the whole dummy script has been incorporated within code chunks in your manuscript.
+5.  Render the document and check the output.
+6.  Play around with the code chunk options and re-render the document.
+
+## Exercise - Inline code
+
+Take a couple of minutes to play around with the possibilities of *inline code*:
+
+1.  Do a simple calculation such as `25 + 25` within your text.
+2.  Report the number of "Gentoo" and/or "Chinstrap" species of penguins within the data (hint: refer to the example in the slides).
+3.  Try out one other (simple) in-line computation or calculation!
+
+## Exercise - Sourcing scripts
+
+The R script `do_addition.R` in the `scripts` folder contain a function to perform simple addition. The function takes two numbers as arguments, adds them together, and outputs the result to the console.
+
+1.  Add a new code chunk to your manuscript that includes the `do_addition` function into your Quarto document.
+
+2.  Add a new code chunk that suppresses all the code and warnings
+
+3.  Use the `do_addition` function to add two numbers of your choice to test whether your answer is correct!

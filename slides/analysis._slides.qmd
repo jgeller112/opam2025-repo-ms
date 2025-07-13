@@ -1,0 +1,441 @@
+---
+format:
+  revealjs:
+    theme: night
+    embed-resources: true
+    slide-number: true
+    navigation-mode: linear
+    controls: true
+    auto-stretch: false 
+    code-overflow: wrap
+    incremental: true
+    css: styles.css
+    fontsize: "25pt"
+---
+
+# Code  {background-color="#FFCD00"}
+
+# Topics
+
+1.  Code chunks
+2.  Inline code
+3.  Sourcing scripts
+
+## What are code chunks?
+
+-   Specified place for code
+-   Executable
+-   Weaved between between text
+-   May print output or create new variables, for example
+
+<br>
+
+. . .
+
+```{{{r}}}
+#| echo: true
+1993 + 2023
+```
+
+```{r}
+#| echo: false
+1993 + 2023
+```
+
+## Anatomy of a code chunk
+
+::::: columns
+::: {.column width="50%"}
+1.  On each end of the code chunk: 3 *backticks*: ```` ``` ```` \*\*
+2.  Curly brackets: *engine*: `{r}` or `{python}` \*\*
+3.  Top of chunk: Code chunk options, with *hashpipe*: `#|`
+:::
+
+::: {.column width="50%"}
+```` md
+```{{r}}
+#| label: cars-r
+#| echo: false
+mtcars %>% 
+  distinct(cyl)
+```
+````
+
+<br>
+
+```` md
+```{{python}}
+#| label: car-py
+#| echo: false
+distinct_cyl = mtcars.drop_duplicates(subset=['cyl'])
+```
+````
+:::
+:::::
+
+\*\* *not needed in a code cell in a Jupyter notebook!*
+
+## Code chunk options {.smaller}
+
+Useful [code chunk options](https://quarto.org/docs/computations/execution-options.html)
+
+| Option | Description |
+|------------------------------------|------------------------------------|
+| `eval` | `Evaluate the code chunk.` |
+| `echo` | `Include the source code in output` |
+| `output` | \`Include code output results (`true`, `false`, or `asis`)\` |
+| `warning` | `Include warnings in the output.`\` |
+| `error` | `Include errors in the output (continues execution if error present).` |
+| `include` | `Catch all for preventing any output (code or results) from being included.` |
+| `label` | `Please make sure to label your code chunks! It helps with debugging.` |
+| `fig-cap` | `caption your figure` |
+| `fig-width` | `width of the figure` |
+| `fig-height` | `height of the figure` |
+
+## Code Chunk Options
+
+Options for *all* code chunks: include in `yaml` (top of the document).
+
+. . .
+
+For example...
+
+``` yaml
+---
+format: html
+execute:
+  echo: false
+---
+```
+
+... hides all code in the output!
+
+## Inserting Code Chunks
+
+Option 1: Source editor: Type it out
+
+. . .
+
+Option 2: Visual editor: `Insert` \> `Code cell`
+
+. . .
+
+Option 3: Shortcuts:
+
+-   **RStudio**: *Ctrl+Alt+I*
+
+## Demo: echo option
+
+`echo` hides/shows code and outputs results
+
+::::: columns
+::: {.column width="45%"}
+**Code**
+
+```{{r}}
+#| label: ex-orig
+#| echo: true 
+x = 1:10; y = 11:20
+plot(x, y)
+```
+:::
+
+::: {.column width="45%"}
+**Output**
+
+`ex-original` Output:
+
+```{r, echo = TRUE}
+#| label: ex-orig
+#| fig-height: 2.5
+x = 1:10; y = 11:20
+plot(x, y)
+```
+:::
+:::::
+
+## Demo: echo option
+
+::::: columns
+::: {.column width="45%"}
+**Code**
+
+```{{r}}
+#| label: ex-hide-code
+#| echo: false
+x = 1:10; y = 11:20
+plot(x, y)
+```
+:::
+
+::: {.column width="45%"}
+**Output**
+
+`ex-hide-code` Output:
+
+```{r}
+#| label: ex-hide-code
+#| echo: false
+#| fig-height: 2.5
+x = 1:10; y = 11:20
+plot(x, y)
+```
+:::
+:::::
+
+## Demo: eval option
+
+`eval` shows code, but does not create results.
+
+::::: columns
+::: {.column width="45%"}
+**Code**
+
+```{{r}}
+#| label: ex-orig
+#| eval: true
+x = 1:10; y = 11:20
+plot(x, y)
+```
+:::
+
+::: {.column width="45%"}
+**Output**
+
+`ex-original` Output:
+
+```{r}
+#| label: ex-orig-2
+#| fig-height: 2.5
+x = 1:10; y = 11:20
+plot(x, y)
+```
+:::
+:::::
+
+## Demo: eval option
+
+`eval` shows code, but does not create results.
+
+::::: columns
+::: {.column width="45%"}
+**Code**
+
+```{{r}}
+#| label: ex-not-run
+#| eval: false
+x = 1:10; y = 11:20
+plot(x, y)
+```
+:::
+
+::: {.column width="45%"}
+**Output**
+
+`ex-not-run` Output:
+
+```{r}
+#| label: ex-not-run
+#| eval: false
+#| echo: true
+x = 1:10; y = 11:20
+plot(x, y)
+```
+:::
+:::::
+
+## Code Fold
+
+```{r}
+#| echo: true 
+#| code-fold: true
+
+
+x = 1:10; y = 11:20
+plot(x, y)
+
+
+```
+
+## Exercise
+
+Go to the analysis section on the website do the exercise.
+
+You will be pasting some code from a `dummy` script into code chunks in your document!
+
+```{r}
+library(countdown)
+
+countdown(minutes = 15,
+          color_background = "#FFCD00")
+```
+
+# Inline Code {background-color="#FFCD00"}
+
+## Inline code: what & why?
+
+Insert results or (quick) calculations into running text, without additional text formatting. <br>
+
+. . .
+
+Why?
+
+-   report and describe results reproducibly
+-   minimizes errors: no manual copy-pasting results
+-   automatic updating when data or code changes
+
+## Inline code
+
+Enclose the *R* expression using `` `r ` ``.
+
+**Code:**
+
+```{=html}
+<div class="sourceCode">
+<pre class="sourceCode markdown">
+<code class="sourceCode markdown">
+There are &#96;r nrow(cars)&#96; observations in our data. 
+</code>
+</pre>
+</div>
+```
+
+**Output:**
+
+::: border
+There are `r nrow(cars)` observations in our data.
+:::
+
+::: callout-important
+If using `Visual` or `Source` mode, be advised the *R* expression will only substitute the value held by the variable when the Quarto document is **rendered**. That is, the value contained within the expression only appears in the **output** file.
+:::
+
+## Reference code chunk variables inline
+
+**Code:**
+
+```{{{r}}}
+#| label: calc-values
+#| echo: false
+x = 1:10
+x_mu = mean(x)
+x_sd = sd(x)
+```
+
+```{=html}
+<div class="sourceCode">
+<pre class="sourceCode markdown">
+<code class="sourceCode markdown">
+The _mean_ of **x** is  &#96;r x_mu&#96; and
+the _standard deviation_ is &#96;r x_sd&#96;.
+</code>
+</pre>
+</div>
+```
+
+**Output:**
+
+::: border
+The mean of **x** is 5.5 and the *standard deviation* is 3.02765.
+:::
+
+## Inline code: how?
+
+**In R**
+
+```{r}
+#| label: Load the penguins dataset
+#| echo: false
+library(palmerpenguins)
+```
+
+``` md
+There are `r knitr::inline_expr("sum(penguins$Species=='Adelie')")` 
+penguins of the Adelie species in the dataset.
+```
+
+``` md
+There are `r sum(penguins$species=="Adelie")` penguins of the "Adelie" species in the dataset.
+```
+
+## Exercise
+
+Take a couple of minutes to play around with the possibilities of *inline code*!
+
+Go to the *Inline code* chapter in the workshop book to complete the exercise.
+
+```{r}
+library(countdown)
+
+countdown(minutes = 10,
+          color_background = "#FFCD00")
+```
+
+# Sourcing Scripts {background-color="#FFCD00"}
+
+## Sourcing external files: what & why?
+
+For example: R and Python scripts, `.qmd` or `.ipynb` files.
+
+<br>
+
+Why separate scripts from the manuscript?
+
+-   minimizes errors: no manual copy-pasting code
+-   easier code debugging
+-   making the Quarto document easier to digest
+-   modular coding = good coding practice
+
+## Sourcing external files: how? {.smaller}
+
+`.qmd` files: use the chunk option `#| file: "your-script.ext"`.\
+`.ipynb files`: import the script as module or run it.
+
+. . .
+
+::::: columns
+::: {.column width="50%"}
+**R:**
+
+```{{{r}}}
+#| file: "your-script.R"
+#| eval: true 
+```
+:::
+
+::: {.column width="50%"}
+**Python:** <!-- I think this can be excluded but not sure so I'll leave commented
+````
+```{{.python include="your-script.py"}}
+```
+````
+
+followed by
+-->
+
+```{{{python}}}
+#| echo: false
+%run your-script.py
+```
+
+<br> **Or**: Add an empty `__init__.py` file to your scripts folder and run:
+
+```{{{python}}}
+#| echo: false
+from your-script import function
+```
+:::
+:::::
+
+## Exercise
+
+-   The `workshop-materials` contain 2 example scripts: `do_addition.R` and `do_addition.py`. You will use the R script to include the code in your Quarto document.
+
+    -   Go to the analysis section on the website and complete the exercise!
+
+```{r}
+library(countdown)
+
+countdown(minutes = 10,
+          color_background = "#FFCD00")
+```

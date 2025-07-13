@@ -1,0 +1,70 @@
+/* Superhero Theme - styles.css */
+
+/* ---------- Sidebar Styles ---------- */
+.sidebar {
+  background-color: #800000; /* Maroon */
+  padding: 1rem;
+}
+
+.sidebar a,
+.sidebar .nav-link,
+.sidebar .nav-item {
+  color: #FFD700 !important; /* Gold */
+  text-decoration: none;
+}
+
+.sidebar .nav-link.active {
+  font-weight: bold;
+  color: #FFD700 !important;
+}
+
+/* ---------- Headings and Links ---------- */
+h1, h2, h3, h4, a {
+  color: #800000; /* Maroon */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------- Body and Text ---------- */
+body {
+  background-color: #fffaf5; /* Soft background for contrast */
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Code and Preformatted Text ---------- */
+pre, code {
+  background-color: #f9f3e9;
+  color: #800000;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+/* ---------- Buttons ---------- */
+button, .btn {
+  background-color: #800000;
+  color: #FFD700;
+  border: none;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #a00000;
+  color: #fff;
+}
+
+/* ---------- Optional Footer ---------- */
+.footer {
+  background-color: #800000;
+  color: #FFD700;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

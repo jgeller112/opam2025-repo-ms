@@ -1,0 +1,43 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Reproducible Manuscripts in R with Quarto Workshop"
+  sidebar:
+    background: "maroon"
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - section: "Workshop"
+        contents:
+          - href: index.qmd
+            text: Home
+          - section: "Slides"
+            contents:
+              - href: slides/workshop-materials.qmd
+                text: Materials
+              - section: "Introduction"  # Introduction as a parent
+                contents:
+                  - href: slides/introduction.qmd
+                    text: Overview
+                  - href: slides/getting-started.qmd
+                    text: Getting Started  # Nested under Introduction
+              - href: slides/markdown-syntax.qmd
+                text: Markdown
+              - href: slides/code-chunks.qmd
+                text: Analysis
+              - href: slides/rendering.qmd
+                text: Rendering
+              - href: slides/whats_next.qmd
+                text: What's next?
+format:
+  html:
+    theme: superhero
+    toc: true
+    css: styles_bc.css
+    fontsize: "20pt"
+
+editor: visual
+
