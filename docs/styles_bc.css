@@ -1,32 +1,30 @@
-/* Superhero Theme - styles.css */
-
-/* ---------- Sidebar Styles ---------- */
+/* ---------- OPAM Sidebar Styles ---------- */
 .sidebar {
-  background-color: #800000; /* Maroon */
+  background: linear-gradient(to right, #F7941D, #EF4136);
   padding: 1rem;
 }
 
 .sidebar a,
 .sidebar .nav-link,
 .sidebar .nav-item {
-  color: #FFD700 !important; /* Gold */
+  color: #fff !important;
   text-decoration: none;
 }
 
 .sidebar .nav-link.active {
   font-weight: bold;
-  color: #FFD700 !important;
+  color: #fff !important;
 }
 
 /* ---------- Headings and Links ---------- */
 h1, h2, h3, h4, a {
-  color: #800000; /* Maroon */
+  color: #EF4136;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* ---------- Body and Text ---------- */
 body {
-  background-color: #fffaf5; /* Soft background for contrast */
+  background-color: #fffaf5;
   color: #333;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -36,8 +34,8 @@ body {
 
 /* ---------- Code and Preformatted Text ---------- */
 pre, code {
-  background-color: #f9f3e9;
-  color: #800000;
+  background-color: #fef2e6;
+  color: #D9480F;
   font-family: 'Courier New', Courier, monospace;
   padding: 0.5rem;
   border-radius: 4px;
@@ -45,25 +43,25 @@ pre, code {
 
 /* ---------- Buttons ---------- */
 button, .btn {
-  background-color: #800000;
-  color: #FFD700;
+  background: linear-gradient(to right, #F7941D, #EF4136);
+  color: white;
   border: none;
   padding: 0.5em 1em;
   font-weight: bold;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 button:hover, .btn:hover {
-  background-color: #a00000;
-  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(239, 65, 54, 0.5);
 }
 
-/* ---------- Optional Footer ---------- */
+/* ---------- Footer ---------- */
 .footer {
-  background-color: #800000;
-  color: #FFD700;
+  background: linear-gradient(to right, #F7941D, #EF4136);
+  color: white;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
