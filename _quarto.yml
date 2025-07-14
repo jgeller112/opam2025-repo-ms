@@ -25,7 +25,7 @@ website:
               - href: slides/markdown-syntax.qmd
                 text: Markdown
               - href: slides/Referencing.qmd
-              - text: Referencing
+                text: Referencing
               - href: slides/code-chunks.qmd
                 text: Analysis
               - href: slides/rendering.qmd

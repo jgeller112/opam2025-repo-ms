@@ -41,7 +41,7 @@ format:
 ::: {.column width="50%"}
 <br>
 
-![](/images/os.jpg){fig-align="center" width="535"}
+![](/images/os.jpg){fig-align="center" width="646"}
 :::
 :::::
 
@@ -76,6 +76,7 @@ format:
     -   Creating a Quarto manuscript
 
         -   RStudio: New Project \> New Directory \> Quarto Manuscript
+        -   Positron: New File \> Quarto Project \> Manuscript Project
 
 -   Approach 2: Start with a sample template
 
@@ -108,9 +109,17 @@ tinytex::install_tinytex()
 3.  Copy-paste results and figures/tables
 4.  Manually format your results and citations
 
+:::{.incremental}
+
+<center>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s3JldKoA0zw" frameborder="0" data-external="1" allowfullscreen>
 
 </iframe>
+
+</center>
+
+:::
 
 # The Problem
 

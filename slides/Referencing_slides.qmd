@@ -10,7 +10,7 @@ format:
     fontsize: "24pt"
 ---
 
-# Referencing {background-color="#FFCD00"}
+# Referencing
 
 ## BibTex Keys
 
