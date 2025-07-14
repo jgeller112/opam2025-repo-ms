@@ -1,0 +1,112 @@
+---
+format:
+  revealjs:
+    theme: night
+    embed-resources: true
+    slide-number: true
+    navigation-mode: linear
+    controls: true
+    css: styles.css
+    fontsize: "24pt"
+---
+
+# Referencing {background-color="#FFCD00"}
+
+## BibTex Keys
+
+Now that we know how to write in Markdown, let's add some references!
+
+Adding reproducible references happens with **BibTex keys**. A typical BibTex key might look like as follows:
+
+``` markdown
+@article{nash51,
+  author  = "Nash, John",
+  title   = "Non-cooperative Games",
+  journal = "Annals of Mathematics",
+  year    = 1951,
+  volume  = "54",
+  number  = "2",
+  pages   = "286--295"
+}
+```
+
+## Working With BibTex Keys
+
+We will work with with bibliographies in the form of `.bib` files (*BibTeX Bibliographical Database*). `.bib` files are text files which contain a list of references in the form of BibTex keys.
+
+Here is an example of another BibTex key for a reference used in this workshop:
+
+``` markdown
+@misc{RMarkdownWritingReproducible,
+    title = {{RMarkdown} for writing reproducible scientific papers},
+    url = {https://libscie.github.io/rmarkdown-workshop/handout.html},
+    urldate = {2023-04-18},
+}
+```
+
+## Working With BibTex Keys {.smaller}
+
+The typical workflow is as follows:
+
+::: incremental
+1.  Find a reference that you need in your manuscript.
+2.  Save it to your Zotero library via the browser extension\
+    Zotero automatically updates your `.bib` file through syncing with Zotero desktop and updating the `.bib` file.
+3.  Cite the references using the `@` + reference identifier:
+    -   **In-text citations**: `@nash51` OR `@RMarkdownWritingReproducible`
+    -   **Bracketed citations**: `[@nash51]` OR `[@nash51, @RMarkdownWritingReproducible]`
+:::
+
+. . .
+
+``` yaml
+---
+bibliography: references.bib
+---
+```
+
+More info: <https://quarto.org/docs/authoring/footnotes-and-citations.html>
+
+## References on the fly
+
+-   Alternatively, when using the Visual Editor option - you can use the citation dialog/option to insert citations directly.
+
+-   Let's go to RStudio!
+
+## Exercise
+
+Go to the *`Referencing`* section on the website and refer to the instructions in the *Exercise* section.
+
+You will go through the workflow of creating a `.bib` file that will be automatically updated by Zotero and integrating it with your Quarto document.
+
+```{r}
+library(countdown)
+
+countdown(minutes = 10,
+          color_background = "#FFCD00")
+```
+
+## APA Style
+
+-   You need to use a csl (citation style guide) file to make sure references are properly formatted
+
+-   I have included the apa7.csl file in the project folder
+
+    -   This will format references/citations in accordance with APA 7th edition
+
+## Exercise
+
+-   Add the `csl` to your YAML and include the apa7.csl file
+
+    ```{r}
+    #| eval: false
+    csl: apa7.csl
+    ```
+
+-   Render your document
+
+```{r}
+
+countdown(minutes = 2,
+          color_background = "#FFCD00")
+```

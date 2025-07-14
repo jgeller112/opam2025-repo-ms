@@ -122,7 +122,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Workshop</a></li><li class="breadcrumb-item"><a href="../slides/workshop-materials.html">Slides</a></li><li class="breadcrumb-item"><a href="../slides/markdown-syntax.html">Markdown</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Workshop</a></li><li class="breadcrumb-item">Slides</li><li class="breadcrumb-item"><a href="../slides/markdown-syntax.html">Markdown</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -171,12 +171,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../slides/workshop-materials.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Materials</span></a>
-  </div>
-</li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
@@ -208,6 +202,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../slides/Referencing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referencing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+ <span class="menu-text">Referencing</span>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../slides/code-chunks.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Analysis</span></a>
   </div>
@@ -216,12 +219,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../slides/rendering.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Rendering</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../slides/whats_next.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">What’s next?</span></a>
   </div>
 </li>
       </ul>
@@ -246,7 +243,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#what-it-should-look-like" id="toc-what-it-should-look-like" class="nav-link" data-scroll-target="#what-it-should-look-like">What It Should Look Like</a></li>
   <li><a href="#links-you-need" id="toc-links-you-need" class="nav-link" data-scroll-target="#links-you-need">Links you need</a></li>
   </ul></li>
-  <li><a href="#exercise-referencing" id="toc-exercise-referencing" class="nav-link" data-scroll-target="#exercise-referencing">Exercise: Referencing</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -277,7 +273,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Meet the penguins</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>The <span class="in">`penguins`</span> data from the palmerpenguins package contains size measurements for344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica. </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>The <span class="in">`penguins`</span> data from the palmerpenguins package contains size measurements for 344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica. </span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>The plot below shows the relationship between flipper and bill lengths of these penguins.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <section id="what-it-should-look-like" class="level3">
@@ -287,68 +283,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="links-you-need" class="level3">
 <h3 class="anchored" data-anchor-id="links-you-need">Links you need</h3>
 <ul>
-<li>You can find the illustration of the three species of Palmer Archipelago penguins (Chinstrap, Gentoo, and Adelie) here: <a href="https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png" class="uri">https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png</a>.</li>
-<li>The link to the Palmer Penguins package is here: <a href="https://allisonhorst.github.io/palmerpenguins/" class="uri">https://allisonhorst.github.io/palmerpenguins/</a>.</li>
+<li><p>You can find the illustration of the three species of Palmer Archipelago penguins (Chinstrap, Gentoo, and Adelie) here: <a href="https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png" class="uri">https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png</a>.</p></li>
+<li><p>The link to the Palmer Penguins package is here: <a href="https://allisonhorst.github.io/palmerpenguins/" class="uri">https://allisonhorst.github.io/palmerpenguins/</a>.</p></li>
 </ul>
-</section>
-</section>
-<section id="exercise-referencing" class="level2">
-<h2 class="anchored" data-anchor-id="exercise-referencing">Exercise: Referencing</h2>
-<p>We’re assuming installation of Zotero Desktop, Zotero Connector, and Better BibTex for Zotero were completed successfully.</p>
-<ol type="1">
-<li>Open <strong>Zotero Desktop</strong></li>
-</ol>
-<ul>
-<li>log into your account</li>
-<li>create a new collection for your project, for example: <code>my-reproducible-manuscript</code></li>
-</ul>
-<ol start="2" type="1">
-<li>Open your <strong>Web Browser</strong></li>
-</ol>
-<ul>
-<li>double-check that you can find the <strong>Zotero Connector</strong> in your browser</li>
-<li>run a web / Google Scholar search for “Allison Horst PalmerPenguins Package”</li>
-<li>use the Zotero Connector to save the reference to your collection</li>
-</ul>
-<ol start="3" type="1">
-<li>In <strong>Zotero Desktop</strong>,</li>
-</ol>
-<ul>
-<li>Right-click your collection and select <em>Export Collection</em></li>
-<li>For the <strong>Format</strong>, select <em>Better BibTex</em></li>
-<li>Click the option to <em>Keep updated</em></li>
-<li>Provide the file name as <code>references</code> and <strong>save it in the same folder as your Quarto document</strong></li>
-</ul>
-<ol start="4" type="1">
-<li>In <strong>RStudio</strong>,</li>
-</ol>
-<ul>
-<li>update the YAML to include the bibliography:</li>
-</ul>
-<pre><code>---
-title: "My Reproducible Manuscript"
-format: html
-bibliography: references.bib
----</code></pre>
-<ol start="5" type="1">
-<li><strong>Insert a Citation</strong></li>
-</ol>
-<ul>
-<li><p>In the text of your Quarto document, insert the <em>PalmerPenguins</em> citation (hint: refer to the slides and your .bib file to figure how to format the citation)</p></li>
-<li><p>Alternatively, when using the Visual Editor option - you can use the citation dialog/option to insert citations directly.</p></li>
-<li><p>Render the document</p></li>
-</ul>
-<ol start="6" type="1">
-<li><strong>Repetition</strong></li>
-</ol>
-<ul>
-<li>Repeat Step 2 with another reference</li>
-<li>Repeat Step 5 to insert the new reference</li>
-<li>if you did a bracketed citation before, do an in-text citation this time (or vice versa)</li>
-</ul>
-<p><strong>Note:</strong> Steps 1, 3, 4 can be skipped. These were a one-time thing.</p>
 
 
+</section>
 </section>
 </section>
 

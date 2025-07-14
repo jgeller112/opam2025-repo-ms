@@ -8,7 +8,7 @@ title: "OPAM 2025: Reproducible Manuscripts in R and Quarto Workshop"
 
 <p align="center">
 
-{{< qrcode https://jgeller112.github.io/BC_2025_Repo_Manuscripts/ >}}
+{{< qrcode https://jgeller112.github.io/opam2025-repo-ms/ >}}
 
 </p>
 
