@@ -65,42 +65,6 @@ format:
 :::
 :::::
 
-# Before We Begin
-
-::: callout-important
-## Always start a new project folder!
-:::
-
--   Approach 1: Start from scratch (now)
-
-    -   Creating a Quarto manuscript
-
-        -   RStudio: New Project \> New Directory \> Quarto Manuscript
-        -   Positron: New File \> Quarto Project \> Manuscript Project
-
--   Approach 2: Start with a sample template
-
-## Packages
-
-```{r}
-#| echo: true
-library(palmerpenguins) # penguins
-library(quarto) # qmd 
-library(rmarkdown) # markdown
-library(tidyverse) # data wrangling
-
-
-```
-
-```{r}
-#| eval: false
-#| echo: true
-install.packages('tinytex') # for use with pdf 
-tinytex::install_tinytex()
-# to uninstall TinyTeX, run tinytex::uninstall_tinytex()
-```
-
--   You should also have Zotero installed along with Better BibTeX (nice, but not necessary)
 
 ## Typical workflow
 
@@ -243,6 +207,43 @@ We found that half of all published psychology papers that use null-hypothesis s
 -   Easy verification and reproducilbility of research findings
 
 -   While programming environments may seem counter-intuitive for writing papers, they ultimately prevent mistakes and save time.
+
+# Before We Begin
+
+::: callout-important
+## Always start a new project folder!
+:::
+
+-   Approach 1: Start from scratch (now)
+
+    -   Creating a Quarto manuscript
+
+        -   RStudio: New Project \> New Directory \> Quarto Manuscript
+        -   Positron: New File \> Quarto Project \> Manuscript Project
+
+-   Approach 2: Start with a sample template
+
+## Packages
+
+```{r}
+#| echo: true
+library(palmerpenguins) # penguins
+library(quarto) # qmd 
+library(rmarkdown) # markdown
+library(tidyverse) # data wrangling
+
+
+```
+
+```{r}
+#| eval: false
+#| echo: true
+install.packages('tinytex') # for use with pdf 
+tinytex::install_tinytex()
+# to uninstall TinyTeX, run tinytex::uninstall_tinytex()
+```
+
+-   You should also have Zotero installed along with Better BibTeX (nice, but not necessary)
 
 # Overview of a Quarto Document
 

@@ -705,13 +705,6 @@
     "text": "Open Science + Reproducibility\n\n\n\nToday we are going to focus on the workflow component\n\nSpecifically reproducible code/projects and literate programming\n\nText\nCode/analyses\nCitations\n\n\n\n\n\n\n\nhttps://stodden.net/icerm_report.pdf"
   },
   {
-    "objectID": "slides/introduction_slides.html#packages",
-    "href": "slides/introduction_slides.html#packages",
-    "title": "Reproducible Manuscripts in R",
-    "section": "Packages",
-    "text": "Packages\n\nlibrary(palmerpenguins) # penguins\nlibrary(quarto) # qmd \nlibrary(rmarkdown) # markdown\nlibrary(tidyverse) # data wrangling\n\n\ninstall.packages('tinytex') # for use with pdf \ntinytex::install_tinytex()\n# to uninstall TinyTeX, run tinytex::uninstall_tinytex()\n\n\nYou should also have Zotero installed along with Better BibTeX (nice, but not necessary)"
-  },
-  {
     "objectID": "slides/introduction_slides.html#typical-workflow",
     "href": "slides/introduction_slides.html#typical-workflow",
     "title": "Reproducible Manuscripts in R",
@@ -801,6 +794,13 @@
     "title": "Reproducible Manuscripts in R",
     "section": "Advantages",
     "text": "Advantages\n(3) Promote computational reproducibility\n\nEasy verification and reproducilbility of research findings\nWhile programming environments may seem counter-intuitive for writing papers, they ultimately prevent mistakes and save time."
+  },
+  {
+    "objectID": "slides/introduction_slides.html#packages",
+    "href": "slides/introduction_slides.html#packages",
+    "title": "Reproducible Manuscripts in R",
+    "section": "Packages",
+    "text": "Packages\n\nlibrary(palmerpenguins) # penguins\nlibrary(quarto) # qmd \nlibrary(rmarkdown) # markdown\nlibrary(tidyverse) # data wrangling\n\n\ninstall.packages('tinytex') # for use with pdf \ntinytex::install_tinytex()\n# to uninstall TinyTeX, run tinytex::uninstall_tinytex()\n\n\nYou should also have Zotero installed along with Better BibTeX (nice, but not necessary)"
   },
   {
     "objectID": "slides/introduction_slides.html#create-a-quarto-document",
