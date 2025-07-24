@@ -27,7 +27,7 @@ format:
 ::: {.column width="50%"}
 <br>
 
--   Openly sharing your research
+-   Openly and transparently sharing your work
 
     -   Open publications
 
@@ -49,22 +49,21 @@ format:
 
 ::::: columns
 ::: {.column width="50%"}
--   Today we are going to focus on the workflow component
+-   Today we are going to focus on workflow
 
-    -   Specifically reproducible code/projects and literate programming
+    -   Reproducible code/projects and literate programming
 
         -   Text
 
         -   Code/analyses
 
-        -   Citations
+        -   References
 :::
 
 ::: {.column width="50%"}
 ![https://stodden.net/icerm_report.pdf](/images/osf2.jpg){fig-align="center"}
 :::
 :::::
-
 
 ## Typical workflow
 

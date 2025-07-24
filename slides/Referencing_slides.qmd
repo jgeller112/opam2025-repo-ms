@@ -7,10 +7,10 @@ format:
     navigation-mode: linear
     controls: true
     css: styles.css
-    fontsize: "24pt"
+    fontsize: "25pt"
 ---
 
-# Referencing
+# Referencing {background-color="#FFCD00"}
 
 ## BibTex Keys
 

@@ -16,12 +16,8 @@ website:
             text: Home
           - section: "Slides"
             contents:
-              - section: "Introduction"  # Introduction as a parent
-                contents:
-                  - href: slides/introduction.qmd
-                    text: Overview
-                  - href: slides/getting-started.qmd
-                    text: Getting Started  # Nested under Introduction
+              - href: slides/introduction.qmd
+                text: Introduction
               - href: slides/markdown-syntax.qmd
                 text: Markdown
               - href: slides/Referencing.qmd

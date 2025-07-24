@@ -9,7 +9,7 @@ format:
     code-overflow: wrap
     code-line-numbers: false
     css: styles.css
-    fontsize: "25pt"
+    fontsize: "24pt"
 ---
 
 # Writing {background-color="#FFCD00"}
