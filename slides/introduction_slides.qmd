@@ -27,7 +27,7 @@ format:
 ::: {.column width="50%"}
 <br>
 
--   Openly and transparently sharing your work
+-   Being open and transparent with your work
 
     -   Open publications
 

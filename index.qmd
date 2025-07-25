@@ -26,4 +26,4 @@ This workflow reduces the amount of human error, improves computational reproduc
 
 By the end of the workshop, you will be sufficiently familiar with the tools and components behind a reproducible manuscript, so you can implement the workflow in your own research projects.
 
-Our workshop material is licensed under a Creative Commons Attribution 4.0 International License. You can view the license on our [GitHub repository](https://jgeller112.github.io/BC_2025_Repo_Manuscripts/).
+Our workshop material is licensed under a Creative Commons Attribution 4.0 International License. You can view the license on our [GitHub repository](https://github.com/jgeller112/opam2025-repo-ms).
