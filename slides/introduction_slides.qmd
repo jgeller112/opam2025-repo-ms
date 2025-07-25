@@ -51,11 +51,11 @@ format:
 ::: {.column width="50%"}
 -   Today we are going to focus on workflow
 
-    -   Reproducible code/projects and literate programming
-
+    - Reproducible manuscripts: 
+    
         -   Text
 
-        -   Code/analyses
+        -   Code
 
         -   References
 :::

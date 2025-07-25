@@ -694,7 +694,7 @@
     "href": "slides/introduction_slides.html#open-science-reproducibility",
     "title": "Reproducible Manuscripts in R",
     "section": "Open Science + Reproducibility",
-    "text": "Open Science + Reproducibility\n\n\n\nToday we are going to focus on workflow\n\nReproducible code/projects and literate programming\n\nText\nCode/analyses\nReferences\n\n\n\n\n\n\n\nhttps://stodden.net/icerm_report.pdf"
+    "text": "Open Science + Reproducibility\n\n\n\nToday we are going to focus on workflow\n\nReproducible manuscripts:\n\nText\nCode\nReferences\n\n\n\n\n\n\n\nhttps://stodden.net/icerm_report.pdf"
   },
   {
     "objectID": "slides/introduction_slides.html#typical-workflow",
