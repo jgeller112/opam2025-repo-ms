@@ -29,19 +29,19 @@ format:
 
 -   Being open and transparent across all stages of the research process
 
-    -   Open access
+    -   Key principles:
 
-    -   Open experimental protocols
+        -   Open access
 
-    -   Open software
+        -   Open data
 
-    -   Open data
+        -   Open code
 :::
 
 ::: {.column width="50%"}
 <br>
 
-![](/images/os.jpg){fig-align="center" width="646"}
+![](/images/os.jpg){fig-align="center" width="734"}
 :::
 :::::
 
