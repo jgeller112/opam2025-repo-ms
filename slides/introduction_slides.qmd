@@ -54,8 +54,11 @@ format:
 
 ::: {.column width="50%"}
 -   Today we are going to focus on reproducible manuscript
--   {{< fa folder >}}
+
+-   {{< fa book >}}
+
 -   {{< fa file-code >}}
+
 -   {{< fa quote-left >}}
 :::
 :::::
