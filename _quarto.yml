@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Reproducible Manuscripts in R with Quarto Workshop"
+  title: "OPAM 2025: Reproducible Manuscripts in R with Quarto"
   sidebar:
     background: "maroon"
     style: "docked"

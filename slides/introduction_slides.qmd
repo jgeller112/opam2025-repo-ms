@@ -19,7 +19,7 @@ format:
     fig-height: 14
 ---
 
-# The Credibilty Revolution
+# The Credibility Revolution
 
 ## Open science
 
@@ -27,9 +27,9 @@ format:
 ::: {.column width="50%"}
 <br>
 
--   Being open and transparent with your work
+-   Being open and transparent across all stages of the research process
 
-    -   Open publications
+    -   Open access
 
     -   Open experimental protocols
 
@@ -45,23 +45,18 @@ format:
 :::
 :::::
 
-## Open Science + Reproducibility
+## Open Science in Practice: Reproducible Manuscripts
 
 ::::: columns
 ::: {.column width="50%"}
--   Today we are going to focus on workflow
-
-    - Reproducible manuscripts: 
-    
-        -   Text
-
-        -   Code
-
-        -   References
+![Elements of Reproducible Research(Stodden et al.)](/images/osf2.jpg){alt="Elements of Reproducible Research(Stodden et al.)" fig-align="center"}
 :::
 
 ::: {.column width="50%"}
-![https://stodden.net/icerm_report.pdf](/images/osf2.jpg){fig-align="center"}
+-   Today we are going to focus on reproducible manuscript
+-   {{< fa folder >}}
+-   {{< fa file-code >}}
+-   {{< fa quote-left >}}
 :::
 :::::
 
@@ -72,8 +67,7 @@ format:
 3.  Copy-paste results and figures/tables
 4.  Manually format your results and citations
 
-:::{.incremental}
-
+::: incremental
 <center>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s3JldKoA0zw" frameborder="0" data-external="1" allowfullscreen>
@@ -81,7 +75,6 @@ format:
 </iframe>
 
 </center>
-
 :::
 
 # The Problem
