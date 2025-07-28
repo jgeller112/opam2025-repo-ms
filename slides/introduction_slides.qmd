@@ -21,7 +21,7 @@ format:
 
 # The Credibility Revolution
 
-## Open science
+## Open Science
 
 ::::: columns
 ::: {.column width="50%"}
