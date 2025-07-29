@@ -18,7 +18,7 @@
     "href": "slides/writing_slides.html#topics",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "Topics",
-    "text": "Topics\n\nMarkdown syntax\nReferencing"
+    "text": "Topics\n\nMarkdown syntax"
   },
   {
     "objectID": "slides/writing_slides.html#markdown-syntax",
@@ -173,13 +173,6 @@
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "Callout markdown syntax",
     "text": "Callout markdown syntax\n\n\n\n\n\n\nExpand To Learn About Collapse\n\n\nThis is an example of a ‘folded’ caution callout that can be expanded by the user. You can use `collapse=“true”` to collapse it by default or `collapse=“false”` to make a collapsible callout that is expanded by default."
-  },
-  {
-    "objectID": "slides/writing_slides.html#markdown-exercise",
-    "href": "slides/writing_slides.html#markdown-exercise",
-    "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
-    "section": "Markdown exercise",
-    "text": "Markdown exercise\n\nGo to the Writing/Reference section on the website and refer to the text provided in the Exercise section.\nCopy the text into your Quarto document, like an Introduction of sorts, and reformat it with Markdown Syntax\nRender the document to HTML.\n\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "slides/references.html",
@@ -879,13 +872,6 @@
     "text": "References on the fly\n\nAlternatively, when using the Visual Editor option - you can use the citation dialog/option to insert citations directly.\nLet’s go to RStudio!"
   },
   {
-    "objectID": "slides/Referencing_slides.html#exercise",
-    "href": "slides/Referencing_slides.html#exercise",
-    "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
-    "section": "Exercise",
-    "text": "Exercise\nGo to the Referencing section on the website and refer to the instructions in the Exercise section.\nYou will go through the workflow of creating a .bib file that will be automatically updated by Zotero and integrating it with your Quarto document.\n\n\n\n−+\n10:00"
-  },
-  {
     "objectID": "slides/Referencing_slides.html#apa-style",
     "href": "slides/Referencing_slides.html#apa-style",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
@@ -893,10 +879,10 @@
     "text": "APA Style\n\nYou need to use a csl (citation style guide) file to make sure references are properly formatted\nI have included the apa7.csl file in the project folder\n\nThis will format references/citations in accordance with APA 7th edition"
   },
   {
-    "objectID": "slides/Referencing_slides.html#exercise-1",
-    "href": "slides/Referencing_slides.html#exercise-1",
+    "objectID": "slides/Referencing_slides.html#exercise",
+    "href": "slides/Referencing_slides.html#exercise",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "Exercise",
-    "text": "Exercise\n\nAdd the csl to your YAML and include the apa7.csl file\nRender your document\n\n\n\n\n−+\n02:00"
+    "text": "Exercise\n\nAdd the csl to your YAML and include the apa7.csl file\nRender your document"
   }
 ]

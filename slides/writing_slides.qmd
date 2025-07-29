@@ -17,7 +17,6 @@ format:
 ## Topics
 
 -   Markdown syntax
--   Referencing
 
 ## Markdown syntax
 
@@ -394,17 +393,4 @@ Here is something under construction
 This is an example of a 'folded' caution callout that can be expanded by the user. You can use \`collapse="true"\` to collapse it by default or \`collapse="false"\` to make a collapsible callout that is expanded by default.
 :::
 
-## Markdown exercise
-
-1.  Go to the `Writing/Reference` section on the website and refer to the text provided in the *Exercise* section.
-
-2.  Copy the text into your Quarto document, like an *Introduction* of sorts, and reformat it with Markdown Syntax
-
-3.  Render the document to HTML.
-
-```{r}
-library(countdown)
-
-countdown(minutes = 10,
-          color_background = "#FFCD00")
-```
+# Markdown Exercise

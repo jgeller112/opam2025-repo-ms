@@ -73,19 +73,6 @@ More info: <https://quarto.org/docs/authoring/footnotes-and-citations.html>
 
 -   Let's go to RStudio!
 
-## Exercise
-
-Go to the *`Referencing`* section on the website and refer to the instructions in the *Exercise* section.
-
-You will go through the workflow of creating a `.bib` file that will be automatically updated by Zotero and integrating it with your Quarto document.
-
-```{r}
-library(countdown)
-
-countdown(minutes = 10,
-          color_background = "#FFCD00")
-```
-
 ## APA Style
 
 -   You need to use a csl (citation style guide) file to make sure references are properly formatted
@@ -104,9 +91,3 @@ countdown(minutes = 10,
     ```
 
 -   Render your document
-
-```{r}
-
-countdown(minutes = 2,
-          color_background = "#FFCD00")
-```
