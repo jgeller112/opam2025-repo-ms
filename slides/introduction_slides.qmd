@@ -49,17 +49,23 @@ format:
 
 ::::: columns
 ::: {.column width="50%"}
-![Elements of Reproducible Research(Stodden et al.)](/images/osf2.jpg){alt="Elements of Reproducible Research(Stodden et al.)" fig-align="center"}
+![Elements of Reproducible Research(Stodden et al.)](/images/osf2.jpg){fig-align="center"}
 :::
 
 ::: {.column width="50%"}
 -   Today we are going to focus on reproducible manuscript
 
--   {{< fa book >}}
+-   
 
--   {{< fa file-code >}}
+    {{< fa book >}}
 
--   {{< fa quote-left >}}
+-   
+
+    {{< fa file-code >}}
+
+-   
+
+    {{< fa quote-left >}}
 :::
 :::::
 
@@ -161,7 +167,7 @@ format:
 
 ## Big universe
 
--   RMarkdown for EVERYONE
+-   For EVERYONE
 
 ![![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAUCAYAAACnOeyiAAAAXklEQVR4XmNgAIL///8zMYSGhjIDGYIMIiIMvECGMwMDN4M4kFEDUqIIZKwDMdSBjAsghj6Q8QPEMAAy/lOBoQekv4AYKkDGfgZeXl4RICOLQUtLiw3IUAJJMQIZ7AC2tU2tJWCy/wAAAABJRU5ErkJggg==){alt=""}](img/horst_quarto_schematic.png){fig-align="center"}
 
@@ -226,8 +232,6 @@ library(palmerpenguins) # penguins
 library(quarto) # qmd 
 library(rmarkdown) # markdown
 library(tidyverse) # data wrangling
-
-
 ```
 
 ```{r}
