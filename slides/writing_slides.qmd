@@ -81,7 +81,7 @@ to creating any kind of document
 
 ## Markdown quick reference in RStudio
 
-![Accessing the "Markdown Quick Reference" Guide inside of RStudio](assets/quarto-images/qmd-annotations/markdown-cheatsheet.png){height="400" fig-alt="Opening the built-in Markdown quick reference sheet inside of RStudio by going to the help menu and selecting 'Markdown Quick Reference'."}
+![Accessing the "Markdown Quick Reference" Guide inside of RStudio](/assets/quarto-images/qmd-annotations/markdown-cheatsheet.png){fig-alt="Opening the built-in Markdown quick reference sheet inside of RStudio by going to the help menu and selecting 'Markdown Quick Reference'."}
 
 ## Learning Markdown
 
