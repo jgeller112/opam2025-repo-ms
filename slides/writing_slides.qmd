@@ -89,7 +89,7 @@ You can familiarize yourself with Markdown in a couple of minutes using the foll
 
 . . .
 
-You can also use the **Visual Editor** in [VS Code](https://quarto.org/docs/visual-editor/vscode/) or [RStudio](https://quarto.org/docs/visual-editor/), to see Markdown syntax previewed in it's final format as you write. The Visual Editor also has some common Word-like shortcuts, such as `Ctrl + B` to make text bold.
+You can also use the **Visual Editor** in [VS Code](https://quarto.org/docs/visual-editor/vscode/), [RStudio](https://quarto.org/docs/visual-editor/), or \[Positron\](<https://positron.posit.co/>) to see Markdown syntax previewed in it's final format as you write. The Visual Editor also has some common Word-like shortcuts, such as `Ctrl + B` to make text bold.
 
 ## Markdown Sneak Peek: Text Formatting
 
@@ -275,6 +275,8 @@ To simplify ordered lists and allow for moving items in the list around, use `1.
 ::: callout-tip
 `Visual` mode provides a [`Table` menu](https://quarto.org/docs/visual-editor/#editor-toolbar) to setup [quarto tables](https://quarto.org/docs/authoring/tables.html) or use the [table generator](https://www.tablesgenerator.com/markdown_tables) website.
 :::
+
+![](/assets/gifs/table.gif){fig-align="center" width="626"}
 
 ## Markdown sneak peek: Links {.smaller}
 

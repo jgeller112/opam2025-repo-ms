@@ -778,7 +778,7 @@
     "href": "slides/writing_slides.html#learning-markdown",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "Learning Markdown",
-    "text": "Learning Markdown\nYou can familiarize yourself with Markdown in a couple of minutes using the following link: https://www.markdownguide.org/cheat-sheet/.\n\nYou can also use the Visual Editor in VS Code or RStudio, to see Markdown syntax previewed in it’s final format as you write. The Visual Editor also has some common Word-like shortcuts, such as Ctrl + B to make text bold."
+    "text": "Learning Markdown\nYou can familiarize yourself with Markdown in a couple of minutes using the following link: https://www.markdownguide.org/cheat-sheet/.\n\nYou can also use the Visual Editor in VS Code, RStudio, or [Positron](https://positron.posit.co/) to see Markdown syntax previewed in it’s final format as you write. The Visual Editor also has some common Word-like shortcuts, such as Ctrl + B to make text bold."
   },
   {
     "objectID": "slides/writing_slides.html#markdown-sneak-peek-text-formatting",
