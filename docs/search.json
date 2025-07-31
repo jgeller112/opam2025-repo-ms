@@ -374,13 +374,6 @@
     "text": "APA - apaquarto"
   },
   {
-    "objectID": "slides/rendering_slides.html#exercise",
-    "href": "slides/rendering_slides.html#exercise",
-    "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
-    "section": "Exercise",
-    "text": "Exercise\n\nGo to the Rendering chapter in the workshop book and refer to the instructions in the Exercise section.\nYou will render your document into html and docx formats.\n\n\n\n\n−+\n10:00"
-  },
-  {
     "objectID": "slides/rendering_slides.html#sharing-work",
     "href": "slides/rendering_slides.html#sharing-work",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",

@@ -158,19 +158,6 @@ quarto use template wjschne/apaquarto
 
 ![](https://github.com/wjschne/apaquarto/raw/main/img/journalmode.png){fig-align="center"}
 
-## Exercise
-
--   Go to the *Rendering* chapter in the workshop book and refer to the instructions in the *Exercise* section.
-
--   You will render your document into html and docx formats.
-
-```{r}
-library(countdown)
-
-countdown(minutes = 10,
-          color_background = "#FFCD00")
-```
-
 # Publishing
 
 ## Sharing Work
