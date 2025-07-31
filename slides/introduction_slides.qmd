@@ -209,6 +209,8 @@ We found that half of all published psychology papers that use null-hypothesis s
 
 -   While programming environments may seem counter-intuitive for writing papers, they ultimately prevent mistakes and save time.
 
+# Let's write a manuscript! 
+
 # Before We Begin
 
 ::: callout-important

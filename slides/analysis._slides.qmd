@@ -13,7 +13,7 @@ format:
     fontsize: "25pt"
 ---
 
-# Code  {background-color="#FFCD00"}
+# Code {background-color="#FFCD00"}
 
 # Topics
 
@@ -257,18 +257,7 @@ plot(x, y)
 
 ```
 
-## Exercise
-
-Go to the analysis section on the website do the exercise.
-
-You will be pasting some code from a `dummy` script into code chunks in your document!
-
-```{r}
-library(countdown)
-
-countdown(minutes = 15,
-          color_background = "#FFCD00")
-```
+# Exercise
 
 # Inline Code {background-color="#FFCD00"}
 
@@ -358,18 +347,7 @@ penguins of the Adelie species in the dataset.
 There are `r sum(penguins$species=="Adelie")` penguins of the "Adelie" species in the dataset.
 ```
 
-## Exercise
-
-Take a couple of minutes to play around with the possibilities of *inline code*!
-
-Go to the *Inline code* chapter in the workshop book to complete the exercise.
-
-```{r}
-library(countdown)
-
-countdown(minutes = 10,
-          color_background = "#FFCD00")
-```
+# Exercise
 
 # Sourcing Scripts {background-color="#FFCD00"}
 
@@ -426,16 +404,3 @@ from your-script import function
 ```
 :::
 :::::
-
-## Exercise
-
--   The `workshop-materials` contain 2 example scripts: `do_addition.R` and `do_addition.py`. You will use the R script to include the code in your Quarto document.
-
-    -   Go to the analysis section on the website and complete the exercise!
-
-```{r}
-library(countdown)
-
-countdown(minutes = 10,
-          color_background = "#FFCD00")
-```

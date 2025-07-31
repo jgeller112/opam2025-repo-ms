@@ -39,14 +39,14 @@
     "href": "slides/Referencing_slides.html#references-on-the-fly",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "References on the fly",
-    "text": "References on the fly\n\nAlternatively, when using the Visual Editor option - you can use the citation dialog/option to insert citations directly.\nLet’s go to RStudio!"
+    "text": "References on the fly\n\nAlternatively, when using the Visual Editor option - you can use the citation dialog/option to insert citations directly."
   },
   {
     "objectID": "slides/Referencing_slides.html#apa-style",
     "href": "slides/Referencing_slides.html#apa-style",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "APA Style",
-    "text": "APA Style\n\nYou need to use a csl (citation style guide) file to make sure references are properly formatted\nI have included the apa7.csl file in the project folder\n\nThis will format references/citations in accordance with APA 7th edition"
+    "text": "APA Style\n\nYou need to use a csl (citation style guide) file to make sure references are properly formatted\nI have included the apa.csl file in the Github folder\n\nThis will format references/citations in accordance with APA 7th edition"
   },
   {
     "objectID": "slides/Referencing_slides.html#exercise",
@@ -489,13 +489,6 @@
     "text": "Code Fold\n\n\nCode\nx = 1:10; y = 11:20\nplot(x, y)"
   },
   {
-    "objectID": "slides/analysis._slides.html#exercise",
-    "href": "slides/analysis._slides.html#exercise",
-    "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
-    "section": "Exercise",
-    "text": "Exercise\nGo to the analysis section on the website do the exercise.\nYou will be pasting some code from a dummy script into code chunks in your document!\n\n\n\n−+\n15:00"
-  },
-  {
     "objectID": "slides/analysis._slides.html#inline-code-what-why",
     "href": "slides/analysis._slides.html#inline-code-what-why",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
@@ -524,13 +517,6 @@
     "text": "Inline code: how?\nIn R\nThere are `r sum(penguins$Species=='Adelie')` \npenguins of the Adelie species in the dataset.\nThere are 152 penguins of the \"Adelie\" species in the dataset."
   },
   {
-    "objectID": "slides/analysis._slides.html#exercise-1",
-    "href": "slides/analysis._slides.html#exercise-1",
-    "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
-    "section": "Exercise",
-    "text": "Exercise\nTake a couple of minutes to play around with the possibilities of inline code!\nGo to the Inline code chapter in the workshop book to complete the exercise.\n\n\n\n−+\n10:00"
-  },
-  {
     "objectID": "slides/analysis._slides.html#sourcing-external-files-what-why",
     "href": "slides/analysis._slides.html#sourcing-external-files-what-why",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
@@ -543,13 +529,6 @@
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "Sourcing external files: how?",
     "text": "Sourcing external files: how?\n.qmd files: use the chunk option #| file: \"your-script.ext\".\n.ipynb files: import the script as module or run it.\n\n\n\nR:\n```{{r}}\n#| file: \"your-script.R\"\n#| eval: true \n```\n\nPython: \n```{{python}}\n#| echo: false\n%run your-script.py\n```\n Or: Add an empty __init__.py file to your scripts folder and run:\n```{{python}}\n#| echo: false\nfrom your-script import function\n```"
-  },
-  {
-    "objectID": "slides/analysis._slides.html#exercise-2",
-    "href": "slides/analysis._slides.html#exercise-2",
-    "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
-    "section": "Exercise",
-    "text": "Exercise\n\nThe workshop-materials contain 2 example scripts: do_addition.R and do_addition.py. You will use the R script to include the code in your Quarto document.\n\nGo to the analysis section on the website and complete the exercise!\n\n\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "slides/markdown-syntax.html",
@@ -646,7 +625,7 @@
     "href": "slides/code-chunks.html",
     "title": "Analysis",
     "section": "",
-    "text": "View slides in full screen\n \n\n\n\n\n\nOpen the dummy.R (if you’re using R) or dummy.py (if you’re using Python) script from the scripts folder.\n\nInsert a code chunk at the beginning of your document (i.e. below the YAML header) and insert the relevant code from the script to load the necessary packages.\nInsert a code chunk in the Results section of your document and copy a piece/section of the dummy script into it.\nRun the code chunk and see if it works alright.\nRepeat the previous three steps until the whole dummy script has been incorporated within code chunks in your manuscript.\nRender the document and check the output.\nPlay around with the code chunk options and re-render the document.\n\n\n\n\nTake a couple of minutes to play around with the possibilities of inline code:\n\nDo a simple calculation such as 25 + 25 within your text.\nReport the number of “Gentoo” and/or “Chinstrap” species of penguins within the data (hint: refer to the example in the slides).\nTry out one other (simple) in-line computation or calculation!\n\n\n\n\nThe R script do_addition.R in the scripts folder contain a function to perform simple addition. The function takes two numbers as arguments, adds them together, and outputs the result to the console.\n\nAdd a new code chunk to your manuscript that includes the do_addition function into your Quarto document.\nAdd a new code chunk that suppresses all the code and warnings\nUse the do_addition function to add two numbers of your choice to test whether your answer is correct!",
+    "text": "View slides in full screen\n \n\n\n\n\n\nOpen the dummy.R\n\nInsert a code chunk at the beginning of your document (i.e. below the YAML header) and insert the relevant code from the script to load the necessary packages.\nInsert a code chunk in the Results section of your document and copy a piece/section of the dummy script into it.\nRun the code chunk and see if it works alright.\nRepeat the previous three steps until the whole dummy script has been incorporated within code chunks in your manuscript.\nRender the document and check the output.\nPlay around with the code chunk options and re-render the document.\n\n\n\n\nTake a couple of minutes to play around with the possibilities of inline code:\n\nDo a simple calculation such as 25 + 25 within your text.\nReport the number of “Gentoo” and/or “Chinstrap” species of penguins within the data (hint: refer to the example in the slides).\nTry out one other (simple) in-line computation or calculation!\n\n\n\n\nThe R script do_addition.R in the scripts folder contain a function to perform simple addition. The function takes two numbers as arguments, adds them together, and outputs the result to the console.\n\nAdd a new code chunk to your manuscript that includes the do_addition function into your Quarto document.\nAdd a new code chunk that suppresses all the code and warnings\nUse the do_addition function to add two numbers of your choice to test whether your answer is correct!",
     "crumbs": [
       "Workshop",
       "Slides",
@@ -658,7 +637,7 @@
     "href": "slides/code-chunks.html#exercise---code-chunks",
     "title": "Analysis",
     "section": "",
-    "text": "Open the dummy.R (if you’re using R) or dummy.py (if you’re using Python) script from the scripts folder.\n\nInsert a code chunk at the beginning of your document (i.e. below the YAML header) and insert the relevant code from the script to load the necessary packages.\nInsert a code chunk in the Results section of your document and copy a piece/section of the dummy script into it.\nRun the code chunk and see if it works alright.\nRepeat the previous three steps until the whole dummy script has been incorporated within code chunks in your manuscript.\nRender the document and check the output.\nPlay around with the code chunk options and re-render the document.",
+    "text": "Open the dummy.R\n\nInsert a code chunk at the beginning of your document (i.e. below the YAML header) and insert the relevant code from the script to load the necessary packages.\nInsert a code chunk in the Results section of your document and copy a piece/section of the dummy script into it.\nRun the code chunk and see if it works alright.\nRepeat the previous three steps until the whole dummy script has been incorporated within code chunks in your manuscript.\nRender the document and check the output.\nPlay around with the code chunk options and re-render the document.",
     "crumbs": [
       "Workshop",
       "Slides",
