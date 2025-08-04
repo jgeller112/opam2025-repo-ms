@@ -101,15 +101,22 @@
     "objectID": "slides/introduction_slides.html#what-do-we-want",
     "href": "slides/introduction_slides.html#what-do-we-want",
     "title": "Reproducible Manuscripts in R",
-    "section": "What do we want?",
-    "text": "What do we want?\n\nCombine narrative with code (literate programming)\nAutomatically generate figures and tables\nAutomatically render results in text\nFormat the content into a scientific paper (including citations!)\nSomething that looks pretty!\nRinse & repeat"
+    "section": "What Do We Want?",
+    "text": "What Do We Want?\n\nCombine narrative with code (literate programming)\nAutomatically generate figures and tables\nAutomatically render results in text\nFormat the content into a scientific paper (including citations!)\nSomething that looks pretty!\nRinse & repeat"
   },
   {
     "objectID": "slides/introduction_slides.html#hello-quarto",
     "href": "slides/introduction_slides.html#hello-quarto",
     "title": "Reproducible Manuscripts in R",
     "section": "Hello Quarto!",
-    "text": "Hello Quarto!\n\n\n\nAuthoring framework for data science, designed for reproducibility\nUnify and extends the R Markdown ecosystem.\nDevelop and Switch formats without hassle."
+    "text": "Hello Quarto!\n\n\n\nAuthoring framework for data science, designed for reproducibility\nUnify and extends the R Markdown ecosystem"
+  },
+  {
+    "objectID": "slides/introduction_slides.html#big-universe",
+    "href": "slides/introduction_slides.html#big-universe",
+    "title": "Reproducible Manuscripts in R",
+    "section": "Big Universe",
+    "text": "Big Universe\n\nFor EVERYONE\n\nDevelop and Switch formats without hassle"
   },
   {
     "objectID": "slides/introduction_slides.html#hello-quarto-1",
@@ -117,13 +124,6 @@
     "title": "Reproducible Manuscripts in R",
     "section": "Hello Quarto!",
     "text": "Hello Quarto!\n\nWebsites (https://www.drjasongeller.com)\nBlogs\nBooks (https://jgeller112.github.io/dis_flu_modeling/)\nWant to guess how I created these slides?"
-  },
-  {
-    "objectID": "slides/introduction_slides.html#big-universe",
-    "href": "slides/introduction_slides.html#big-universe",
-    "title": "Reproducible Manuscripts in R",
-    "section": "Big universe",
-    "text": "Big universe\n\nFor EVERYONE"
   },
   {
     "objectID": "slides/introduction_slides.html#what-is-a-quarto",
@@ -151,7 +151,7 @@
     "href": "slides/introduction_slides.html#advantages-1",
     "title": "Reproducible Manuscripts in R",
     "section": "Advantages",
-    "text": "Advantages\n(2) Easy revisions and specification of desired figures and tables\nWhen revisions are requested, one might have to tweak tables and figures by hand constantly, leading to a major incentive never to rerun analyses because it would mean re-pasting and re-illustrating all the numbers and figures in a paper."
+    "text": "Advantages\n(2) Easy revisions and specification of desired figures and tables\nWhen revisions are requested, one might have to tweak tables and figures by hand constantly, leading to a major incentive never to rerun analyses because it would mean re-pasting and re-illustrating all the numbers and figures in a paper"
   },
   {
     "objectID": "slides/introduction_slides.html#advantages-2",

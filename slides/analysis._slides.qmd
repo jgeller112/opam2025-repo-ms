@@ -80,7 +80,7 @@ distinct_cyl = mtcars.drop_duplicates(subset=['cyl'])
 Useful [code chunk options](https://quarto.org/docs/computations/execution-options.html)
 
 | Option | Description |
-|------------------------------------|------------------------------------|
+|----|----|
 | `eval` | `Evaluate the code chunk.` |
 | `echo` | `Include the source code in output` |
 | `output` | \`Include code output results (`true`, `false`, or `asis`)\` |

@@ -53,19 +53,24 @@ format:
 :::
 
 ::: {.column width="50%"}
+
 -   Today we are going to focus on reproducible manuscript
 
--   
+    <center>
 
     {{< fa book >}}
 
--   
+    </center>
+
+    <center>
 
     {{< fa file-code >}}
 
--   
+    <center>
 
     {{< fa quote-left >}}
+
+    </center>
 :::
 :::::
 
@@ -127,7 +132,7 @@ format:
 :::::
 ::::::
 
-## What do we want?
+## What Do We Want?
 
 -   Combine narrative with code (literate programming)
 
@@ -146,14 +151,20 @@ format:
 ::::: columns
 ::: {.column width="50%"}
 -   Authoring framework for data science, designed for reproducibility
--   Unify and extends the R Markdown ecosystem.
--   **Develop** and **Switch** formats without hassle.
+-   Unify and extends the R Markdown ecosystem
 :::
 
 ::: {.column width="50%"}
 ![](assets/wasm-images/logo-quarto.png){fig-alt="The Quarto hexagon logo." fig-align="center"}
 :::
 :::::
+
+## Big Universe
+
+-   For EVERYONE
+    -   Develop and Switch formats without hassle
+
+![](img/horst_quarto_schematic.png){fig-align="center"}
 
 ## Hello Quarto!
 
@@ -164,10 +175,6 @@ format:
 -   Books (<https://jgeller112.github.io/dis_flu_modeling/>)
 
 -   Want to guess how I created these slides?
-
-## Big universe
-
--   For EVERYONE
 
 ![![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAUCAYAAACnOeyiAAAAXklEQVR4XmNgAIL///8zMYSGhjIDGYIMIiIMvECGMwMDN4M4kFEDUqIIZKwDMdSBjAsghj6Q8QPEMAAy/lOBoQekv4AYKkDGfgZeXl4RICOLQUtLiw3IUAJJMQIZ7AC2tU2tJWCy/wAAAABJRU5ErkJggg==){alt=""}](img/horst_quarto_schematic.png){fig-align="center"}
 
@@ -199,7 +206,7 @@ We found that half of all published psychology papers that use null-hypothesis s
 
 **(2) Easy revisions and specification of desired figures and tables**
 
-*When revisions are requested, one might have to tweak tables and figures by hand constantly, leading to a major incentive never to rerun analyses because it would mean re-pasting and re-illustrating all the numbers and figures in a paper.*
+*When revisions are requested, one might have to tweak tables and figures by hand constantly, leading to a major incentive never to rerun analyses because it would mean re-pasting and re-illustrating all the numbers and figures in a paper*
 
 ## Advantages
 
@@ -209,22 +216,18 @@ We found that half of all published psychology papers that use null-hypothesis s
 
 -   While programming environments may seem counter-intuitive for writing papers, they ultimately prevent mistakes and save time.
 
-# Let's write a manuscript! 
+# Let's Write a Manuscript!
 
-# Before We Begin
+# Before we begin
 
 ::: callout-important
 ## Always start a new project folder!
 :::
 
--   Approach 1: Start from scratch (now)
+-   Creating a Quarto manuscript
 
-    -   Creating a Quarto manuscript
-
-        -   RStudio: New Project \> New Directory \> Quarto Manuscript
-        -   Positron: New File \> Quarto Project \> Manuscript Project
-
--   Approach 2: Start with a sample template
+    -   RStudio: New Project \> New Directory \> Quarto Manuscript
+    -   Positron: New File \> Quarto Project \> Manuscript Project
 
 ## Packages
 
