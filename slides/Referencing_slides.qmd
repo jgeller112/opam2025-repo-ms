@@ -32,11 +32,21 @@ Adding reproducible references happens with **BibTex keys**. A typical BibTex ke
 
 ## Working With BibTex Keys
 
-We will work with with bibliographies in the form of `.bib` files (*BibTeX Bibliographical Database*). `.bib` files are text files which contain a list of references in the form of BibTex keys.
+-   We will work with with bibliographies in the form of `.bib` files (*BibTeX Bibliographical Database*). `.bib` files are text files which contain a list of references in the form of BibTex keys.
 
-Here is an example of another BibTex key for a reference used in this workshop:
+    -   Here is an example of a .bib file:
 
 ``` markdown
+@article{nash51,
+  author  = "Nash, John",
+  title   = "Non-cooperative Games",
+  journal = "Annals of Mathematics",
+  year    = 1951,
+  volume  = "54",
+  number  = "2",
+  pages   = "286--295"
+}
+
 @misc{RMarkdownWritingReproducible,
     title = {{RMarkdown} for writing reproducible scientific papers},
     url = {https://libscie.github.io/rmarkdown-workshop/handout.html},
@@ -73,7 +83,7 @@ More info: <https://quarto.org/docs/authoring/footnotes-and-citations.html>
 
 ## APA Style
 
--   You need to use a csl (citation style guide) file to make sure references are properly formatted
+-   You need to use a csl (citation style language) file to make sure references are properly formatted
 
 -   I have included the apa.csl file in the Github folder
 

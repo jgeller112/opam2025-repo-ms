@@ -1,5 +1,5 @@
 ---
-title: "OPAM 2025: Reproducible Manuscripts in R and Quarto Workshop"
+title: "OPAM 2025: Reproducible Manuscripts in R with Quarto"
 ---
 
 ![](images/opam.png){fig-align="center"}

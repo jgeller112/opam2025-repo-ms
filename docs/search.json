@@ -25,7 +25,7 @@
     "href": "slides/Referencing_slides.html#working-with-bibtex-keys",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "Working With BibTex Keys",
-    "text": "Working With BibTex Keys\nWe will work with with bibliographies in the form of .bib files (BibTeX Bibliographical Database). .bib files are text files which contain a list of references in the form of BibTex keys.\nHere is an example of another BibTex key for a reference used in this workshop:\n@misc{RMarkdownWritingReproducible,\n    title = {{RMarkdown} for writing reproducible scientific papers},\n    url = {https://libscie.github.io/rmarkdown-workshop/handout.html},\n    urldate = {2023-04-18},\n}"
+    "text": "Working With BibTex Keys\n\nWe will work with with bibliographies in the form of .bib files (BibTeX Bibliographical Database). .bib files are text files which contain a list of references in the form of BibTex keys.\n\nHere is an example of a .bib file:\n\n\n@article{nash51,\n  author  = \"Nash, John\",\n  title   = \"Non-cooperative Games\",\n  journal = \"Annals of Mathematics\",\n  year    = 1951,\n  volume  = \"54\",\n  number  = \"2\",\n  pages   = \"286--295\"\n}\n\n@misc{RMarkdownWritingReproducible,\n    title = {{RMarkdown} for writing reproducible scientific papers},\n    url = {https://libscie.github.io/rmarkdown-workshop/handout.html},\n    urldate = {2023-04-18},\n}"
   },
   {
     "objectID": "slides/Referencing_slides.html#working-with-bibtex-keys-1",
@@ -46,7 +46,7 @@
     "href": "slides/Referencing_slides.html#apa-style",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "APA Style",
-    "text": "APA Style\n\nYou need to use a csl (citation style guide) file to make sure references are properly formatted\nI have included the apa.csl file in the Github folder\n\nThis will format references/citations in accordance with APA 7th edition"
+    "text": "APA Style\n\nYou need to use a csl (citation style language) file to make sure references are properly formatted\nI have included the apa.csl file in the Github folder\n\nThis will format references/citations in accordance with APA 7th edition"
   },
   {
     "objectID": "slides/Referencing_slides.html#exercise",
@@ -74,7 +74,7 @@
     "href": "slides/introduction_slides.html#typical-workflow",
     "title": "Reproducible Manuscripts in R",
     "section": "Typical workflow",
-    "text": "Typical workflow\n\nDo your analyses\nOpen a program (Word)\nCopy-paste results and figures/tables\nManually format your results and citations"
+    "text": "Typical workflow\n\nDo your analyses\nOpen a program (e.g., Word)\nCopy-paste results and figures/tables\nManually format your results and citations"
   },
   {
     "objectID": "slides/introduction_slides.html#word",
@@ -562,7 +562,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "OPAM 2025: Reproducible Manuscripts in R and Quarto Workshop",
+    "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "",
     "text": "Welcome!\n\n\n\n    \n\nOpen Science practices are becoming central to the way research is conducted. In this workshop, you will learn to set up a reproducible workflow to create a publication-ready manuscript that combines data, R or Python code, text, and references.\nWe will use the Quarto publishing system in conjunction with R or Python to create a publication-ready manuscript that combines data, code, text, and references. More specifically, you will learn how to:\n\nCreate a reproducible project (folder) structure\nUse Markdown syntax effectively for writing text\nRun analyses in code chunks or cells\nManage references using Zotero and Better BibTex for Zotero\nRender your Quarto manuscript to docx, HTML, and pdf files\n\nThis workflow reduces the amount of human error, improves computational reproducibility and makes updating your scientific manuscript more efficient.\nBy the end of the workshop, you will be sufficiently familiar with the tools and components behind a reproducible manuscript, so you can implement the workflow in your own research projects.\nOur workshop material is licensed under a Creative Commons Attribution 4.0 International License. You can view the license on our GitHub repository.",
     "crumbs": [

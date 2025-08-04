@@ -53,31 +53,22 @@ format:
 :::
 
 ::: {.column width="50%"}
-
 -   Today we are going to focus on reproducible manuscript
 
-    <center>
-
     {{< fa book >}}
-
-    </center>
 
     <center>
 
     {{< fa file-code >}}
 
-    <center>
-
     {{< fa quote-left >}}
-
-    </center>
 :::
 :::::
 
 ## Typical workflow
 
 1.  Do your analyses
-2.  Open a program (Word)
+2.  Open a program (e.g., Word)
 3.  Copy-paste results and figures/tables
 4.  Manually format your results and citations
 
