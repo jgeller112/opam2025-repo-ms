@@ -19,7 +19,6 @@ format:
 
 1.  Code chunks
 2.  Inline code
-3.  Sourcing scripts
 
 ## What are code chunks?
 
@@ -344,60 +343,4 @@ penguins of the Adelie species in the dataset.
 There are `r sum(penguins$species=="Adelie")` penguins of the "Adelie" species in the dataset.
 ```
 
-# Exercise
-
-# Sourcing Scripts {background-color="#FFCD00"}
-
-## Sourcing external files: what & why?
-
-For example: R and Python scripts, `.qmd` or `.ipynb` files.
-
-<br>
-
-Why separate scripts from the manuscript?
-
--   minimizes errors: no manual copy-pasting code
--   easier code debugging
--   making the Quarto document easier to digest
--   modular coding = good coding practice
-
-## Sourcing external files: how? {.smaller}
-
-`.qmd` files: use the chunk option `#| file: "your-script.ext"`.\
-`.ipynb files`: import the script as module or run it.
-
-. . .
-
-::::: columns
-::: {.column width="50%"}
-**R:**
-
-```{{{r}}}
-#| file: "your-script.R"
-#| eval: true 
-```
-:::
-
-::: {.column width="50%"}
-**Python:** <!-- I think this can be excluded but not sure so I'll leave commented
-````
-```{{.python include="your-script.py"}}
-```
-````
-
-followed by
--->
-
-```{{{python}}}
-#| echo: false
-%run your-script.py
-```
-
-<br> **Or**: Add an empty `__init__.py` file to your scripts folder and run:
-
-```{{{python}}}
-#| echo: false
-from your-script import function
-```
-:::
-:::::
+# Inline Code Exercise

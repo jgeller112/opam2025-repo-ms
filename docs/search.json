@@ -489,20 +489,6 @@
     "text": "Inline code: how?\nIn R\nThere are `r sum(penguins$Species=='Adelie')` \npenguins of the Adelie species in the dataset.\nThere are 152 penguins of the \"Adelie\" species in the dataset."
   },
   {
-    "objectID": "slides/analysis._slides.html#sourcing-external-files-what-why",
-    "href": "slides/analysis._slides.html#sourcing-external-files-what-why",
-    "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
-    "section": "Sourcing external files: what & why?",
-    "text": "Sourcing external files: what & why?\nFor example: R and Python scripts, .qmd or .ipynb files.\n\nWhy separate scripts from the manuscript?\n\nminimizes errors: no manual copy-pasting code\neasier code debugging\nmaking the Quarto document easier to digest\nmodular coding = good coding practice"
-  },
-  {
-    "objectID": "slides/analysis._slides.html#sourcing-external-files-how",
-    "href": "slides/analysis._slides.html#sourcing-external-files-how",
-    "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
-    "section": "Sourcing external files: how?",
-    "text": "Sourcing external files: how?\n.qmd files: use the chunk option #| file: \"your-script.ext\".\n.ipynb files: import the script as module or run it.\n\n\n\nR:\n```{{r}}\n#| file: \"your-script.R\"\n#| eval: true \n```\n\nPython: \n```{{python}}\n#| echo: false\n%run your-script.py\n```\n Or: Add an empty __init__.py file to your scripts folder and run:\n```{{python}}\n#| echo: false\nfrom your-script import function\n```"
-  },
-  {
     "objectID": "slides/markdown-syntax.html",
     "href": "slides/markdown-syntax.html",
     "title": "Markdown Syntax",
@@ -543,7 +529,7 @@
     "href": "index.html",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "",
-    "text": "Welcome!\n\n\n\n    \n\nOpen Science practices are transforming how research is conducted, emphasizing transparency, reproducibility, and collaboration. In this hands-on workshop, you’ll learn how to build a fully reproducible workflow for writing and publishing a scientific manuscript that integrates text, data, and code. We will use the Quarto publishing system (predecessor to Rmarkdown) in combination with R (or optionally Python) to produce publication-ready outputs in multiple formats.\n\nIn this workshop, you will learn to:\n\n● Set up a reproducible folder and project structure\n● Write using Markdown for clean, structured text\n● Run analyses directly within code chunks or cells and reference statistics in-text\n● Manage references using Zotero and Better BibTeX, and cite them seamlessly in your manuscript\n● Render your Quarto document to Word (.docx), HTML, and PDF\n\nThis workshop is ideal for researchers aiming to streamline their scientific writing and adopt Open Science principles.\nOur workshop material is licensed under a Creative Commons Attribution 4.0 International License. You can view the license on our GitHub repository.",
+    "text": "Welcome!\n\n\n    \nOpen Science practices are transforming how research is conducted, emphasizing transparency, reproducibility, and collaboration. In this hands-on workshop, you’ll learn how to build a fully reproducible workflow for writing and publishing a scientific manuscript that integrates text, data, and code. We will use the Quarto publishing system (predecessor to Rmarkdown) in combination with R (or optionally Python) to produce publication-ready outputs in multiple formats.\n\nIn this workshop, you will learn to:\n\n● Set up a reproducible folder and project structure\n● Write using Markdown for clean, structured text\n● Run analyses directly within code chunks or cells and reference statistics in-text\n● Manage references using Zotero and Better BibTeX, and cite them seamlessly in your manuscript\n● Render your Quarto document to Word (.docx), HTML, and PDF\n\nThis workshop is ideal for researchers aiming to streamline their scientific writing and adopt Open Science principles.\nOur workshop material is licensed under a Creative Commons Attribution 4.0 International License. You can view the license on our GitHub repository.",
     "crumbs": [
       "Workshop",
       "Home"
@@ -597,7 +583,7 @@
     "href": "slides/code-chunks.html",
     "title": "Analysis",
     "section": "",
-    "text": "View slides in full screen\n \n\n\n\n\n\nOpen the dummy.R\n\nInsert a code chunk at the beginning of your document (i.e. below the YAML header) and insert the relevant code from the script to load the necessary packages.\nInsert a code chunk in the Results section of your document and copy a piece/section of the dummy script into it.\nRun the code chunk and see if it works alright.\nRepeat the previous three steps until the whole dummy script has been incorporated within code chunks in your manuscript.\nRender the document and check the output.\nPlay around with the code chunk options and re-render the document.\n\n\n\n\nTake a couple of minutes to play around with the possibilities of inline code:\n\nDo a simple calculation such as 25 + 25 within your text.\nReport the number of “Gentoo” and/or “Chinstrap” species of penguins within the data (hint: refer to the example in the slides).\nTry out one other (simple) in-line computation or calculation!\n\n\n\n\nThe R script do_addition.R in the scripts folder contain a function to perform simple addition. The function takes two numbers as arguments, adds them together, and outputs the result to the console.\n\nAdd a new code chunk to your manuscript that includes the do_addition function into your Quarto document.\nAdd a new code chunk that suppresses all the code and warnings\nUse the do_addition function to add two numbers of your choice to test whether your answer is correct!",
+    "text": "View slides in full screen\n \n\n\n\n\n\nOpen the dummy.R\n\nInsert a code chunk at the beginning of your document (i.e. below the YAML header) and insert the relevant code from the script to load the necessary packages.\nInsert a code chunk in the Results section of your document and copy a piece/section of the dummy script into it.\nRun the code chunk and see if it works alright.\nRepeat the previous three steps until the whole dummy script has been incorporated within code chunks in your manuscript.\nRender the document and check the output.\nPlay around with the code chunk options and re-render the document.\n\n\n\n\nTake a couple of minutes to play around with the possibilities of inline code:\n\nDo a simple calculation such as 25 + 25 within your text.\nReport the number of “Gentoo” and/or “Chinstrap” species of penguins within the data (hint: refer to the example in the slides).\nTry out one other (simple) in-line computation or calculation!",
     "crumbs": [
       "Workshop",
       "Slides",
@@ -622,18 +608,6 @@
     "title": "Analysis",
     "section": "",
     "text": "Take a couple of minutes to play around with the possibilities of inline code:\n\nDo a simple calculation such as 25 + 25 within your text.\nReport the number of “Gentoo” and/or “Chinstrap” species of penguins within the data (hint: refer to the example in the slides).\nTry out one other (simple) in-line computation or calculation!",
-    "crumbs": [
-      "Workshop",
-      "Slides",
-      "Analysis"
-    ]
-  },
-  {
-    "objectID": "slides/code-chunks.html#exercise---sourcing-scripts",
-    "href": "slides/code-chunks.html#exercise---sourcing-scripts",
-    "title": "Analysis",
-    "section": "",
-    "text": "The R script do_addition.R in the scripts folder contain a function to perform simple addition. The function takes two numbers as arguments, adds them together, and outputs the result to the console.\n\nAdd a new code chunk to your manuscript that includes the do_addition function into your Quarto document.\nAdd a new code chunk that suppresses all the code and warnings\nUse the do_addition function to add two numbers of your choice to test whether your answer is correct!",
     "crumbs": [
       "Workshop",
       "Slides",
@@ -828,13 +802,6 @@
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "Callout blocks",
     "text": "Callout blocks\n\n\n\n\n\n\nWarning\n\n\nCallouts provide a simple way to attract attention, for example, to this warning.\n\n\n\n\n\n\n\n\n\nThis is important\n\n\nDanger, callouts will really improve your writing.\n\n\n\n\n\n\n\n\n\nTip with caption\n\n\nRun this first\n\n\n\n\n\n\n\n\n\nCaution, under construction\n\n\nHere is something under construction"
-  },
-  {
-    "objectID": "slides/writing_slides.html#callout-markdown-syntax",
-    "href": "slides/writing_slides.html#callout-markdown-syntax",
-    "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
-    "section": "Callout markdown syntax",
-    "text": "Callout markdown syntax\n\n\n\n\n\n\nExpand To Learn About Collapse\n\n\nThis is an example of a ‘folded’ caution callout that can be expanded by the user. You can use `collapse=“true”` to collapse it by default or `collapse=“false”` to make a collapsible callout that is expanded by default."
   },
   {
     "objectID": "my-reproducible-manuscript 2/index.html",

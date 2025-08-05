@@ -21,12 +21,4 @@ Take a couple of minutes to play around with the possibilities of *inline code*:
 2.  Report the number of "Gentoo" and/or "Chinstrap" species of penguins within the data (hint: refer to the example in the slides).
 3.  Try out one other (simple) in-line computation or calculation!
 
-## Exercise - Sourcing scripts
-
-The R script `do_addition.R` in the `scripts` folder contain a function to perform simple addition. The function takes two numbers as arguments, adds them together, and outputs the result to the console.
-
-1.  Add a new code chunk to your manuscript that includes the `do_addition` function into your Quarto document.
-
-2.  Add a new code chunk that suppresses all the code and warnings
-
-3.  Use the `do_addition` function to add two numbers of your choice to test whether your answer is correct!
+## 

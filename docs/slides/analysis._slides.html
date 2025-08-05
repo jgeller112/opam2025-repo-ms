@@ -1236,7 +1236,6 @@ margin-right: 0; }
 <ol type="1">
 <li class="fragment">Code chunks</li>
 <li class="fragment">Inline code</li>
-<li class="fragment">Sourcing scripts</li>
 </ol>
 </section>
 <section id="what-are-code-chunks" class="slide level2">
@@ -1563,67 +1562,15 @@ the _standard deviation_ is `r x_sd`.
 <span id="cb15-2"><a></a>penguins of the Adelie species in the dataset.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="sourceCode" id="cb16"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a></a>There are 152 penguins of the &quot;Adelie&quot; species in the dataset.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section></section>
-<section id="exercise-1" class="title-slide slide level1 center">
-<h1>Exercise</h1>
-
-</section>
-
-<section>
-<section id="sourcing-scripts" class="title-slide slide level1 center" data-background-color="#FFCD00">
-<h1>Sourcing Scripts</h1>
-
-</section>
-<section id="sourcing-external-files-what-why" class="slide level2">
-<h2>Sourcing external files: what &amp; why?</h2>
-<p>For example: R and Python scripts, <code>.qmd</code> or <code>.ipynb</code> files.</p>
-<p><br></p>
-<p>Why separate scripts from the manuscript?</p>
-<ul>
-<li class="fragment">minimizes errors: no manual copy-pasting code</li>
-<li class="fragment">easier code debugging</li>
-<li class="fragment">making the Quarto document easier to digest</li>
-<li class="fragment">modular coding = good coding practice</li>
-</ul>
-</section>
-<section id="sourcing-external-files-how" class="slide level2 smaller">
-<h2>Sourcing external files: how?</h2>
-<p><code>.qmd</code> files: use the chunk option <code>#| file: &quot;your-script.ext&quot;</code>.<br>
-<code>.ipynb files</code>: import the script as module or run it.</p>
-<div class="fragment">
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>R:</strong></p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a></a><span class="in">```{{r}}</span></span>
-<span id="cb17-2"><a></a><span class="in">#| file: &quot;your-script.R&quot;</span></span>
-<span id="cb17-3"><a></a><span class="in">#| eval: true </span></span>
-<span id="cb17-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column" style="width:50%;">
-<p><strong>Python:</strong> <!-- I think this can be excluded but not sure so I'll leave commented
-````
-```{{.python include="your-script.py"}}
-```
-````
-
-followed by
---></p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a></a><span class="in">```{{python}}</span></span>
-<span id="cb18-2"><a></a><span class="in">#| echo: false</span></span>
-<span id="cb18-3"><a></a><span class="in">%run your-script.py</span></span>
-<span id="cb18-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><br> <strong>Or</strong>: Add an empty <code>__init__.py</code> file to your scripts folder and run:</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a></a><span class="in">```{{python}}</span></span>
-<span id="cb19-2"><a></a><span class="in">#| echo: false</span></span>
-<span id="cb19-3"><a></a><span class="in">from your-script import function</span></span>
-<span id="cb19-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div>
+<section id="inline-code-exercise" class="title-slide slide level1 center">
+<h1>Inline Code Exercise</h1>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
-</div>
-</section></section>
+</section>
     </div>
   </div>
 
