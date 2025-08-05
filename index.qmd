@@ -6,24 +6,23 @@ title: "OPAM 2025: Reproducible Manuscripts in R with Quarto"
 
 # Welcome! {.unnumbered}
 
-<p align="center">
+<center>
 
 {{< qrcode https://jgeller112.github.io/opam2025-repo-ms/ >}}
 
-</p>
+</center>
 
-Open Science practices are becoming central to the way research is conducted. In this workshop, you will learn to set up a reproducible workflow to create a publication-ready manuscript that combines data, R or Python code, text, and references.
+Open Science practices are transforming how research is conducted, emphasizing transparency, reproducibility, and collaboration. In this hands-on workshop, you’ll learn how to build a fully reproducible workflow for writing and publishing a scientific manuscript that integrates text, data, and code. We will use the Quarto publishing system (predecessor to Rmarkdown) in combination with R (or optionally Python) to produce publication-ready outputs in multiple formats.\
+\
+In this workshop, you will learn to:
 
-We will use the Quarto publishing system in conjunction with R or Python to create a publication-ready manuscript that combines data, code, text, and references. More specifically, you will learn how to:
-
--   Create a reproducible project (folder) structure
--   Use Markdown syntax effectively for writing text
--   Run analyses in code chunks or cells
--   Manage references using Zotero and Better BibTex for Zotero
--   Render your Quarto manuscript to docx, HTML, and pdf files
-
-This workflow reduces the amount of human error, improves computational reproducibility and makes updating your scientific manuscript more efficient.
-
-By the end of the workshop, you will be sufficiently familiar with the tools and components behind a reproducible manuscript, so you can implement the workflow in your own research projects.
+\
+● Set up a reproducible folder and project structure\
+● Write using Markdown for clean, structured text\
+● Run analyses directly within code chunks or cells and reference statistics in-text\
+● Manage references using Zotero and Better BibTeX, and cite them seamlessly in your manuscript\
+● Render your Quarto document to Word (.docx), HTML, and PDF\
+\
+This workshop is ideal for researchers aiming to streamline their scientific writing and adopt Open Science principles.
 
 Our workshop material is licensed under a Creative Commons Attribution 4.0 International License. You can view the license on our [GitHub repository](https://github.com/jgeller112/opam2025-repo-ms).
