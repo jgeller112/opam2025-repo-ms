@@ -140,27 +140,6 @@
     "text": "How Quarto Works\nQuarto handles literate programming by using a series of programs:\n\nHow Quarto Works (Source)\nknitr executes all code chunks and creates a new markdown (.md) file\npandoc takes the markdown file generated and converts it to the desired format.\nRender inside of RStudio handles the interaction."
   },
   {
-    "objectID": "slides/introduction_slides.html#advantages",
-    "href": "slides/introduction_slides.html#advantages",
-    "title": "Reproducible Manuscripts in R",
-    "section": "Advantages",
-    "text": "Advantages\n(1) Eliminate/reduce human error\nWe found that half of all published psychology papers that use null-hypothesis significance testing (NHST) contained at least one p-value that was inconsistent with its test statistic and degrees of freedom. One in eight papers contained a grossly inconsistent p-value that may have affected the statistical conclusion)\nNuijten et al., 2016\nhttps://michelenuijten.shinyapps.io/statcheck-web/"
-  },
-  {
-    "objectID": "slides/introduction_slides.html#advantages-1",
-    "href": "slides/introduction_slides.html#advantages-1",
-    "title": "Reproducible Manuscripts in R",
-    "section": "Advantages",
-    "text": "Advantages\n(2) Easy revisions and specification of desired figures and tables\nWhen revisions are requested, one might have to tweak tables and figures by hand constantly, leading to a major incentive never to rerun analyses because it would mean re-pasting and re-illustrating all the numbers and figures in a paper"
-  },
-  {
-    "objectID": "slides/introduction_slides.html#advantages-2",
-    "href": "slides/introduction_slides.html#advantages-2",
-    "title": "Reproducible Manuscripts in R",
-    "section": "Advantages",
-    "text": "Advantages\n(3) Promote computational reproducibility\n\nEasy verification and reproducilbility of research findings\nWhile programming environments may seem counter-intuitive for writing papers, they ultimately prevent mistakes and save time."
-  },
-  {
     "objectID": "slides/introduction_slides.html#packages",
     "href": "slides/introduction_slides.html#packages",
     "title": "Reproducible Manuscripts in R",
@@ -416,7 +395,7 @@
     "href": "slides/analysis._slides.html#what-are-code-chunks",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "What are code chunks?",
-    "text": "What are code chunks?\n\nSpecified place for code\nExecutable\nWeaved between between text\nMay print output or create new variables, for example\n\n\n\n```{{r}}\n#| echo: true\n1993 + 2023\n```\n\n\n[1] 4016"
+    "text": "What are code chunks?\n\nSpecified place for code\nExecutable\nWeaved between between text\nMay print output or create new variables, for example\n\n\n\n\n1993 + 2023\n\n[1] 4016\n\nnumber=1993+2023"
   },
   {
     "objectID": "slides/analysis._slides.html#anatomy-of-a-code-chunk",
@@ -465,14 +444,14 @@
     "href": "slides/analysis._slides.html#demo-eval-option",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "Demo: eval option",
-    "text": "Demo: eval option\neval shows code, but does not create results.\n\n\nCode\n```{r}\n#| label: ex-orig\n#| eval: true\nx = 1:10; y = 11:20\nplot(x, y)\n```\n\nOutput\nex-original Output:"
+    "text": "Demo: eval option\neval controls whether the code is actually executed (TRUE) or just displayed without running (FALSE).\n\n\nCode\n```{r}\n#| label: ex-orig\n#| eval: true\nx = 1:10; y = 11:20\nplot(x, y)\n```\n\nOutput\nex-original Output:"
   },
   {
     "objectID": "slides/analysis._slides.html#demo-eval-option-1",
     "href": "slides/analysis._slides.html#demo-eval-option-1",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "Demo: eval option",
-    "text": "Demo: eval option\neval shows code, but does not create results.\n\n\nCode\n```{r}\n#| label: ex-not-run\n#| eval: false\nx = 1:10; y = 11:20\nplot(x, y)\n```\n\nOutput\nex-not-run Output:\n\nx = 1:10; y = 11:20\nplot(x, y)"
+    "text": "Demo: eval option\neval controls whether the code is actually executed (TRUE) or just displayed without running (FALSE).\n\n\nCode\n```{r}\n#| label: ex-not-run\n#| eval: false\nx = 1:10; y = 11:20\nplot(x, y)\n```\n\nOutput\nex-not-run Output:\n\nx = 1:10; y = 11:20\nplot(x, y)"
   },
   {
     "objectID": "slides/analysis._slides.html#code-fold",

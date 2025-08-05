@@ -57,8 +57,6 @@ format:
 
     {{< fa book >}}
 
-    <center>
-
     {{< fa file-code >}}
 
     {{< fa quote-left >}}
@@ -182,30 +180,6 @@ Quarto handles literate programming by using a series of programs:
 -   **`knitr`** executes all code chunks and creates a new markdown (`.md`) file
 -   **`pandoc`** takes the markdown file generated and converts it to the desired format.
 -   **Render** inside of RStudio handles the interaction.
-
-## Advantages
-
-**(1) Eliminate/reduce human error**
-
-We found that half of all published psychology papers that use null-hypothesis significance testing (NHST) contained at least one p-value that was inconsistent with its test statistic and degrees of freedom. One in eight papers contained a grossly inconsistent p-value that may have affected the statistical conclusion)
-
-[Nuijten et al., 2016](https://doi.org/10.3758/s13428-015-0664-2)
-
-<https://michelenuijten.shinyapps.io/statcheck-web/>
-
-## Advantages
-
-**(2) Easy revisions and specification of desired figures and tables**
-
-*When revisions are requested, one might have to tweak tables and figures by hand constantly, leading to a major incentive never to rerun analyses because it would mean re-pasting and re-illustrating all the numbers and figures in a paper*
-
-## Advantages
-
-**(3) Promote computational reproducibility**
-
--   Easy verification and reproducilbility of research findings
-
--   While programming environments may seem counter-intuitive for writing papers, they ultimately prevent mistakes and save time.
 
 # Let's Write a Manuscript!
 
