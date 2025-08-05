@@ -794,14 +794,7 @@
     "href": "slides/writing_slides.html#callout-blocks-1",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "Callout blocks",
-    "text": "Callout blocks\n\n\n\n\n\n\nNote\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important."
-  },
-  {
-    "objectID": "slides/writing_slides.html#callout-blocks-2",
-    "href": "slides/writing_slides.html#callout-blocks-2",
-    "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
-    "section": "Callout blocks",
-    "text": "Callout blocks\n\n\n\n\n\n\nWarning\n\n\nCallouts provide a simple way to attract attention, for example, to this warning.\n\n\n\n\n\n\n\n\n\nThis is important\n\n\nDanger, callouts will really improve your writing.\n\n\n\n\n\n\n\n\n\nTip with caption\n\n\nRun this first\n\n\n\n\n\n\n\n\n\nCaution, under construction\n\n\nHere is something under construction"
+    "text": "Callout blocks\n\n\n\n\n\n\nNote\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important.\n\n\n\n\n\n\n\n\n\nWarning\n\n\nCallouts provide a simple way to attract attention, for example, to this warning.\n\n\n\n\n\n\n\n\n\nThis is important\n\n\nDanger, callouts will really improve your writing.\n\n\n\n\n\n\n\n\n\nTip with caption\n\n\nRun this first\n\n\n\n\n\n\n\n\n\nCaution, under construction\n\n\nHere is something under construction"
   },
   {
     "objectID": "my-reproducible-manuscript 2/index.html",
