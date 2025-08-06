@@ -254,7 +254,7 @@ plot(x, y)
 
 ```
 
-# Exercise
+# Code Chunk Exercise
 
 # Inline Code {background-color="#FFCD00"}
 
