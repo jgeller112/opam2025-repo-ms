@@ -395,7 +395,7 @@
     "href": "slides/analysis._slides.html#what-are-code-chunks",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "What are code chunks?",
-    "text": "What are code chunks?\n\nSpecified place for code\nExecutable\nWeaved between between text\nMay print output or create new variables, for example\n\n\n\n\n1993 + 2023\n\n[1] 4016\n\nnumber=1993+2023"
+    "text": "What are code chunks?\n\nSpecified place for code\nExecutable\nWeaved between text\nMay print output or create new variables, for example\n\n\n\n\n1993 + 2023\n\n[1] 4016\n\nnumber=1993+2023\nnumber\n\n[1] 4016"
   },
   {
     "objectID": "slides/analysis._slides.html#anatomy-of-a-code-chunk",
@@ -430,7 +430,7 @@
     "href": "slides/analysis._slides.html#demo-echo-option",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "Demo: echo option",
-    "text": "Demo: echo option\necho hides/shows code and outputs results\n\n\nCode\n```{r}\n#| label: ex-orig\n#| echo: true \nx = 1:10; y = 11:20\nplot(x, y)\n```\n\nOutput\nex-original Output:\n\nx = 1:10; y = 11:20\nplot(x, y)"
+    "text": "Demo: echo option\necho hides (FALSE)/shows (TRUE) code and outputs results\n\n\nCode\n```{r}\n#| label: ex-orig\n#| echo: true \nx = 1:10; y = 11:20\nplot(x, y)\n```\n\nOutput\nex-original Output:\n\nx = 1:10; y = 11:20\nplot(x, y)"
   },
   {
     "objectID": "slides/analysis._slides.html#demo-echo-option-1",

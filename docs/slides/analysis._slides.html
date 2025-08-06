@@ -1243,7 +1243,7 @@ margin-right: 0; }
 <ul>
 <li class="fragment">Specified place for code</li>
 <li class="fragment">Executable</li>
-<li class="fragment">Weaved between between text</li>
+<li class="fragment">Weaved between text</li>
 <li class="fragment">May print output or create new variables, for example</li>
 </ul>
 <p><br></p>
@@ -1253,7 +1253,11 @@ margin-right: 0; }
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 4016</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>number<span class="ot">=</span><span class="dv">1993</span><span class="sc">+</span><span class="dv">2023</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>number<span class="ot">=</span><span class="dv">1993</span><span class="sc">+</span><span class="dv">2023</span></span>
+<span id="cb3-2"><a></a>number</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4016</code></pre>
+</div>
 </div>
 </div>
 </section>
@@ -1267,18 +1271,18 @@ margin-right: 0; }
 <li class="fragment">Top of chunk: Code chunk options, with <em>hashpipe</em>: <code>#|</code></li>
 </ol>
 </div><div class="column" style="width:50%;">
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb4-2"><a></a><span class="in">#| label: cars-r</span></span>
-<span id="cb4-3"><a></a><span class="in">#| echo: false</span></span>
-<span id="cb4-4"><a></a><span class="in">mtcars %&gt;% </span></span>
-<span id="cb4-5"><a></a><span class="in">  distinct(cyl)</span></span>
-<span id="cb4-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><br></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a><span class="in">```{python}</span></span>
-<span id="cb5-2"><a></a><span class="in">#| label: car-py</span></span>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb5-2"><a></a><span class="in">#| label: cars-r</span></span>
 <span id="cb5-3"><a></a><span class="in">#| echo: false</span></span>
-<span id="cb5-4"><a></a><span class="in">distinct_cyl = mtcars.drop_duplicates(subset=[&#39;cyl&#39;])</span></span>
-<span id="cb5-5"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-4"><a></a><span class="in">mtcars %&gt;% </span></span>
+<span id="cb5-5"><a></a><span class="in">  distinct(cyl)</span></span>
+<span id="cb5-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource markdown md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a></a><span class="in">```{python}</span></span>
+<span id="cb6-2"><a></a><span class="in">#| label: car-py</span></span>
+<span id="cb6-3"><a></a><span class="in">#| echo: false</span></span>
+<span id="cb6-4"><a></a><span class="in">distinct_cyl = mtcars.drop_duplicates(subset=[&#39;cyl&#39;])</span></span>
+<span id="cb6-5"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
 <p>** <em>not needed in a code cell in a Jupyter notebook!</em></p>
 </section>
@@ -1345,11 +1349,11 @@ margin-right: 0; }
 <p>Options for <em>all</em> code chunks: include in <code>yaml</code> (top of the document).</p>
 <div class="fragment">
 <p>For example…</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a></a><span class="pp">---</span></span>
-<span id="cb6-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
-<span id="cb6-3"><a></a><span class="fu">execute</span><span class="kw">:</span></span>
-<span id="cb6-4"><a></a><span class="at">  </span><span class="fu">echo</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
-<span id="cb6-5"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a></a><span class="pp">---</span></span>
+<span id="cb7-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
+<span id="cb7-3"><a></a><span class="fu">execute</span><span class="kw">:</span></span>
+<span id="cb7-4"><a></a><span class="at">  </span><span class="fu">echo</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb7-5"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>… hides all code in the output!</p>
 </div>
 </section>
@@ -1368,22 +1372,22 @@ margin-right: 0; }
 </section>
 <section id="demo-echo-option" class="slide level2">
 <h2>Demo: echo option</h2>
-<p><code>echo</code> hides/shows code and outputs results</p>
+<p><code>echo</code> hides (FALSE)/shows (TRUE) code and outputs results</p>
 <div class="columns">
 <div class="column" style="width:45%;">
 <p><strong>Code</strong></p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb7-2"><a></a><span class="in">#| label: ex-orig</span></span>
-<span id="cb7-3"><a></a><span class="in">#| echo: true </span></span>
-<span id="cb7-4"><a></a><span class="in">x = 1:10; y = 11:20</span></span>
-<span id="cb7-5"><a></a><span class="in">plot(x, y)</span></span>
-<span id="cb7-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb8-2"><a></a><span class="in">#| label: ex-orig</span></span>
+<span id="cb8-3"><a></a><span class="in">#| echo: true </span></span>
+<span id="cb8-4"><a></a><span class="in">x = 1:10; y = 11:20</span></span>
+<span id="cb8-5"><a></a><span class="in">plot(x, y)</span></span>
+<span id="cb8-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:45%;">
 <p><strong>Output</strong></p>
 <p><code>ex-original</code> Output:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>; y <span class="ot">=</span> <span class="dv">11</span><span class="sc">:</span><span class="dv">20</span></span>
-<span id="cb8-2"><a></a><span class="fu">plot</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>; y <span class="ot">=</span> <span class="dv">11</span><span class="sc">:</span><span class="dv">20</span></span>
+<span id="cb9-2"><a></a><span class="fu">plot</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure>
@@ -1399,12 +1403,12 @@ margin-right: 0; }
 <div class="columns">
 <div class="column" style="width:45%;">
 <p><strong>Code</strong></p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb9-2"><a></a><span class="in">#| label: ex-hide-code</span></span>
-<span id="cb9-3"><a></a><span class="in">#| echo: false</span></span>
-<span id="cb9-4"><a></a><span class="in">x = 1:10; y = 11:20</span></span>
-<span id="cb9-5"><a></a><span class="in">plot(x, y)</span></span>
-<span id="cb9-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb10-2"><a></a><span class="in">#| label: ex-hide-code</span></span>
+<span id="cb10-3"><a></a><span class="in">#| echo: false</span></span>
+<span id="cb10-4"><a></a><span class="in">x = 1:10; y = 11:20</span></span>
+<span id="cb10-5"><a></a><span class="in">plot(x, y)</span></span>
+<span id="cb10-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:45%;">
 <p><strong>Output</strong></p>
 <p><code>ex-hide-code</code> Output:</p>
@@ -1425,12 +1429,12 @@ margin-right: 0; }
 <div class="columns">
 <div class="column" style="width:45%;">
 <p><strong>Code</strong></p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb10-2"><a></a><span class="in">#| label: ex-orig</span></span>
-<span id="cb10-3"><a></a><span class="in">#| eval: true</span></span>
-<span id="cb10-4"><a></a><span class="in">x = 1:10; y = 11:20</span></span>
-<span id="cb10-5"><a></a><span class="in">plot(x, y)</span></span>
-<span id="cb10-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb11-2"><a></a><span class="in">#| label: ex-orig</span></span>
+<span id="cb11-3"><a></a><span class="in">#| eval: true</span></span>
+<span id="cb11-4"><a></a><span class="in">x = 1:10; y = 11:20</span></span>
+<span id="cb11-5"><a></a><span class="in">plot(x, y)</span></span>
+<span id="cb11-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:45%;">
 <p><strong>Output</strong></p>
 <p><code>ex-original</code> Output:</p>
@@ -1451,18 +1455,18 @@ margin-right: 0; }
 <div class="columns">
 <div class="column" style="width:45%;">
 <p><strong>Code</strong></p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb11-2"><a></a><span class="in">#| label: ex-not-run</span></span>
-<span id="cb11-3"><a></a><span class="in">#| eval: false</span></span>
-<span id="cb11-4"><a></a><span class="in">x = 1:10; y = 11:20</span></span>
-<span id="cb11-5"><a></a><span class="in">plot(x, y)</span></span>
-<span id="cb11-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb12-2"><a></a><span class="in">#| label: ex-not-run</span></span>
+<span id="cb12-3"><a></a><span class="in">#| eval: false</span></span>
+<span id="cb12-4"><a></a><span class="in">x = 1:10; y = 11:20</span></span>
+<span id="cb12-5"><a></a><span class="in">plot(x, y)</span></span>
+<span id="cb12-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:45%;">
 <p><strong>Output</strong></p>
 <p><code>ex-not-run</code> Output:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>; y <span class="ot">=</span> <span class="dv">11</span><span class="sc">:</span><span class="dv">20</span></span>
-<span id="cb12-2"><a></a><span class="fu">plot</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>; y <span class="ot">=</span> <span class="dv">11</span><span class="sc">:</span><span class="dv">20</span></span>
+<span id="cb13-2"><a></a><span class="fu">plot</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div></div>
 </section>
@@ -1471,8 +1475,8 @@ margin-right: 0; }
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>; y <span class="ot">=</span> <span class="dv">11</span><span class="sc">:</span><span class="dv">20</span></span>
-<span id="cb13-2"><a></a><span class="fu">plot</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>; y <span class="ot">=</span> <span class="dv">11</span><span class="sc">:</span><span class="dv">20</span></span>
+<span id="cb14-2"><a></a><span class="fu">plot</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -1536,13 +1540,13 @@ There are `r nrow(cars)` observations in our data.
 <section id="reference-code-chunk-variables-inline" class="slide level2">
 <h2>Reference code chunk variables inline</h2>
 <p><strong>Code:</strong></p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a></a><span class="in">```{{r}}</span></span>
-<span id="cb14-2"><a></a><span class="in">#| label: calc-values</span></span>
-<span id="cb14-3"><a></a><span class="in">#| echo: false</span></span>
-<span id="cb14-4"><a></a><span class="in">x = 1:10</span></span>
-<span id="cb14-5"><a></a><span class="in">x_mu = mean(x)</span></span>
-<span id="cb14-6"><a></a><span class="in">x_sd = sd(x)</span></span>
-<span id="cb14-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a></a><span class="in">```{{r}}</span></span>
+<span id="cb15-2"><a></a><span class="in">#| label: calc-values</span></span>
+<span id="cb15-3"><a></a><span class="in">#| echo: false</span></span>
+<span id="cb15-4"><a></a><span class="in">x = 1:10</span></span>
+<span id="cb15-5"><a></a><span class="in">x_mu = mean(x)</span></span>
+<span id="cb15-6"><a></a><span class="in">x_sd = sd(x)</span></span>
+<span id="cb15-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="sourceCode">
 <pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown">
 The _mean_ of **x** is  `r x_mu` and
@@ -1558,9 +1562,9 @@ the _standard deviation_ is `r x_sd`.
 <section id="inline-code-how" class="slide level2">
 <h2>Inline code: how?</h2>
 <p><strong>In R</strong></p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a></a>There are <span class="in">`r sum(penguins$Species==&#39;Adelie&#39;)`</span> </span>
-<span id="cb15-2"><a></a>penguins of the Adelie species in the dataset.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a></a>There are 152 penguins of the &quot;Adelie&quot; species in the dataset.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a></a>There are <span class="in">`r sum(penguins$Species==&#39;Adelie&#39;)`</span> </span>
+<span id="cb16-2"><a></a>penguins of the Adelie species in the dataset.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a></a>There are 152 penguins of the &quot;Adelie&quot; species in the dataset.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section></section>
 <section id="inline-code-exercise" class="title-slide slide level1 center">
 <h1>Inline Code Exercise</h1>

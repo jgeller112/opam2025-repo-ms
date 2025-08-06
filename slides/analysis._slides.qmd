@@ -24,7 +24,7 @@ format:
 
 -   Specified place for code
 -   Executable
--   Weaved between between text
+-   Weaved between text
 -   May print output or create new variables, for example
 
 <br>
@@ -36,6 +36,7 @@ format:
 1993 + 2023
 
 number=1993+2023
+number
 ```
 
 ## Anatomy of a code chunk
@@ -122,7 +123,7 @@ Option 3: Shortcuts:
 
 ## Demo: echo option
 
-`echo` hides/shows code and outputs results
+`echo` hides (FALSE)/shows (TRUE) code and outputs results
 
 ::::: columns
 ::: {.column width="45%"}
