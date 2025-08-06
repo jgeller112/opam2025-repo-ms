@@ -20,6 +20,8 @@ Quarto provides the following output formats:
 
 -   PDF
 
+-   Typst (way better than LaTex!)
+
 -   MS Word (`docx`)
 
 -   OpenOffice (`odt`)

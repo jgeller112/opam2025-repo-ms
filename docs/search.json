@@ -423,7 +423,7 @@
     "href": "slides/analysis._slides.html#inserting-code-chunks",
     "title": "OPAM 2025: Reproducible Manuscripts in R with Quarto",
     "section": "Inserting Code Chunks",
-    "text": "Inserting Code Chunks\nOption 1: Source editor: Type it out\n\nOption 2: Visual editor: Insert &gt; Code cell\n\n\nOption 3: Shortcuts:\n\nRStudio: Ctrl+Alt+I"
+    "text": "Inserting Code Chunks\nOption 1: Source editor: Type it out\n\nOption 2: Visual editor: Insert &gt; Code cell\n\n\nOption 3: Shortcuts:\n\nRStudio: Ctrl+Alt+I (or Cmd + Option + I on Mac)"
   },
   {
     "objectID": "slides/analysis._slides.html#demo-echo-option",
