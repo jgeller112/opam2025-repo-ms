@@ -139,7 +139,7 @@ format:
 
 ::::: columns
 ::: {.column width="50%"}
--   Authoring framework for data science, designed for reproducibility
+-   Open source publishing system designed for reproducibility
 -   Unify and extends the R Markdown ecosystem
 :::
 
@@ -151,7 +151,7 @@ format:
 ## Big Universe
 
 -   For EVERYONE
-    -   Develop and Switch formats without hassle
+    -   Develop and switch formats without hassle
 
 ![](img/horst_quarto_schematic.png){fig-align="center"}
 
@@ -164,8 +164,6 @@ format:
 -   Books (<https://jgeller112.github.io/dis_flu_modeling/>)
 
 -   Want to guess how I created these slides?
-
-![![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAUCAYAAACnOeyiAAAAXklEQVR4XmNgAIL///8zMYSGhjIDGYIMIiIMvECGMwMDN4M4kFEDUqIIZKwDMdSBjAsghj6Q8QPEMAAy/lOBoQekv4AYKkDGfgZeXl4RICOLQUtLiw3IUAJJMQIZ7AC2tU2tJWCy/wAAAABJRU5ErkJggg==){alt=""}](img/horst_quarto_schematic.png){fig-align="center"}
 
 ## What is a Quarto?
 
@@ -183,7 +181,7 @@ Quarto handles literate programming by using a series of programs:
 
 # Let's Write a Manuscript!
 
-# Before we begin
+# Before We begin
 
 ::: callout-important
 ## Always start a new project folder!
