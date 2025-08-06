@@ -14,9 +14,9 @@ format:
 
 ## BibTex Keys
 
-Now that we know how to write in Markdown, let's add some references!
+-   Now that we know how to write in Markdown, let's add some references!
 
-Adding reproducible references happens with **BibTex keys**. A typical BibTex key might look like as follows:
+-   Adding reproducible references happens with **BibTex keys**. A typical BibTex key might look like as follows:
 
 ``` markdown
 @article{nash51,
@@ -29,6 +29,11 @@ Adding reproducible references happens with **BibTex keys**. A typical BibTex ke
   pages   = "286--295"
 }
 ```
+
+-   Two main components:
+
+    1.  A citekey
+    2.  Key-value pairs
 
 ## Working With BibTex Keys
 
